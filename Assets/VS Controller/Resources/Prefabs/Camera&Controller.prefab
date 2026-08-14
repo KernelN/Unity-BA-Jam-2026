@@ -58,7 +58,7 @@ Transform:
   m_GameObject: {fileID: 6243624417189150002}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.20000005, z: 2}
+  m_LocalPosition: {x: 0, y: 0.2, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -170,6 +170,8 @@ GameObject:
   - component: {fileID: 4749770139686490757}
   - component: {fileID: 4907192705679956623}
   - component: {fileID: 2817215584498347449}
+  - component: {fileID: 7200828905450066582}
+  - component: {fileID: 1681965517426589335}
   m_Layer: 0
   m_Name: Camera&Controller
   m_TagString: Player
@@ -232,9 +234,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerController: {fileID: 4749770139686490757}
   UIManager: {fileID: 2817215584498347449}
-  health: {fileID: 0}
+  health: {fileID: 7200828905450066582}
   m_Sensitivity: {x: 150, y: 150}
-  acceleration: 10
+  acceleration: 5
   IdleCameraShake: 1
   bobFrequency: 7
   bobAmplitude: 0.11
@@ -278,9 +280,9 @@ MonoBehaviour:
   crouchSpeedMultiplier: 0.5
   crouchTransitionSpeed: 6
   baseStepInterval: 0.5
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 1681965517426589335}
   soundData: {fileID: 11400000, guid: 13162b4f7770545679ac0d06fff2704e, type: 2}
-  useMobileControls: 1
+  useMobileControls: 0
   InputData: {fileID: 11400000, guid: a830c9b5af3c84058aceae6dc8471bb7, type: 2}
   speedText: {fileID: 0}
   UIManager: {fileID: 2817215584498347449}
@@ -301,7 +303,7 @@ MonoBehaviour:
   holdPoint: {fileID: 3097146397603802701}
   player: {fileID: 5908893712636853401}
   playerCamera: {fileID: 6688917018113372644}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 1681965517426589335}
   errorTeleport: {fileID: 8300000, guid: b47c3a8f781a6470fbab954c8db8181c, type: 3}
   throwForce: 10
   pickUpSpeed: 10
@@ -346,7 +348,38 @@ MonoBehaviour:
     useFaceGrid: 0
     enablePlacementPreview: 1
     spawnBottomToObject: 1
-    hoverInteractions: []
+    hoverInteractions:
+    - onHover:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 0}
+            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_MethodName: SetActive
+            m_Mode: 6
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 1
+            m_CallState: 2
+      onExit:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 0}
+            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_MethodName: SetActive
+            m_Mode: 6
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      isMobile: 1
   - tag: Door
     activateRange: 5
     deactivateRange: 10
@@ -372,6 +405,34 @@ MonoBehaviour:
     useFaceGrid: 0
     enablePlacementPreview: 1
     spawnBottomToObject: 1
+    hoverInteractions: []
+  - tag: Collectable
+    activateRange: 10
+    deactivateRange: 10
+    activateSound: {fileID: 8300000, guid: e6a0cea553fea4079a68a8d16c2058f0, type: 3}
+    deactivateSound: {fileID: 8300000, guid: 49c75161aecf04fe9ba5faaa4fc25753, type: 3}
+    canPickUp: 0
+    isCollectable: 1
+    teleportToThrownObject: 0
+    allowedPlacementTags:
+    - Platform Grid
+    useFaceGrid: 1
+    enablePlacementPreview: 1
+    spawnBottomToObject: 0
+    hoverInteractions: []
+  - tag: Collectable Free
+    activateRange: 10
+    deactivateRange: 10
+    activateSound: {fileID: 8300000, guid: e6a0cea553fea4079a68a8d16c2058f0, type: 3}
+    deactivateSound: {fileID: 8300000, guid: 49c75161aecf04fe9ba5faaa4fc25753, type: 3}
+    canPickUp: 1
+    isCollectable: 1
+    teleportToThrownObject: 0
+    allowedPlacementTags:
+    - Platform Free
+    useFaceGrid: 0
+    enablePlacementPreview: 1
+    spawnBottomToObject: 0
     hoverInteractions: []
   collectedStacks: []
 --- !u!114 &2817215584498347449
@@ -408,3 +469,157 @@ MonoBehaviour:
   lookController: {fileID: 1378239493608451469}
   fpsController: {fileID: 4749770139686490757}
   hudManager: {fileID: 0}
+--- !u!114 &7200828905450066582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8890195379046504662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e96609613274418599c59ff1673c618, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  maxHealth: 100
+  respawnTime: 1.5
+  respawnPoint: {fileID: 0}
+  damageSound: {fileID: 8300000, guid: 0f9c1e425947148d4a04670d9e6cfde8, type: 3}
+  addHeathSound: {fileID: 8300000, guid: d3a2bf3ab653948448d3c775f4a9197b, type: 3}
+  respawnSound: {fileID: 8300000, guid: 37c381d85c6364cb891a48af994fca4b, type: 3}
+  audioSource: {fileID: 0}
+  fpsController: {fileID: 4749770139686490757}
+  lookController: {fileID: 1378239493608451469}
+  controller: {fileID: 2042185862257185292}
+  grabbing: {fileID: 4907192705679956623}
+  minDamageHeight: 4
+  maxDamageHeight: 15
+  damageEffectCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 3
+      outSlope: 3
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hpPanel: {fileID: 0}
+  hpText: {fileID: 0}
+  normalHpSprite: {fileID: 21300000, guid: e955f1d45865d410da459f253feb1dc8, type: 3}
+  lowHpSprite: {fileID: 21300000, guid: 26a55026eae974d46a41b42a7166e273, type: 3}
+  useOverlays: 1
+  bloodOverlay: {fileID: 0}
+  healOverlay: {fileID: 0}
+--- !u!82 &1681965517426589335
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8890195379046504662}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

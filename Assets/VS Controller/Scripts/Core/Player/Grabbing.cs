@@ -121,22 +121,25 @@ namespace VSController
 
             // Assign buttons
             UIManager.GetPointer().enabled = false;
-            UIManager.GetInteractButton().onClick.AddListener(OnInteractButtonPressed);
-            UIManager.GetThrowButton().onClick.AddListener(ThrowObject);
-            UIManager.GetReleaseButton().onClick.AddListener(DropObject);
-            UIManager.GetPlaceButton().onClick.AddListener(TryPlaceCollectedObject);
-            UIManager.GetTakeButton().onClick.AddListener(OnInteractButtonPressed);
+            UIManager.GetInteractButton()?.onClick.AddListener(OnInteractButtonPressed);
+            UIManager.GetThrowButton()?.onClick.AddListener(ThrowObject);
+            UIManager.GetReleaseButton()?.onClick.AddListener(DropObject);
+            UIManager.GetPlaceButton()?.onClick.AddListener(TryPlaceCollectedObject);
+            UIManager.GetTakeButton()?.onClick.AddListener(OnInteractButtonPressed);
 
             // Hide buttons
-            UIManager.GetInteractButton().gameObject.SetActive(false);
-            UIManager.GetThrowButton().gameObject.SetActive(false);
-            UIManager.GetReleaseButton().gameObject.SetActive(false);
-            UIManager.GetPlaceButton().gameObject.SetActive(false);
-            UIManager.GetTakeButton().gameObject.SetActive(false);
+            UIManager.GetInteractButton()?.gameObject.SetActive(false);
+            UIManager.GetThrowButton()?.gameObject.SetActive(false);
+            UIManager.GetReleaseButton()?.gameObject.SetActive(false);
+            UIManager.GetPlaceButton()?.gameObject.SetActive(false);
+            UIManager.GetTakeButton()?.gameObject.SetActive(false);
 
             // Add event trigger
             var placeBtn = UIManager.GetPlaceButton();
 
+            //No button, return
+            if (!placeBtn) return;
+            
             var trig = placeBtn.gameObject.GetComponent<EventTrigger>() ?? placeBtn.gameObject.AddComponent<EventTrigger>();
             trig.triggers ??= new List<EventTrigger.Entry>();
 
