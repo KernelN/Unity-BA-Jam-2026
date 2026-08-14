@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 170833f39c8014163b11f0f598720d30
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 335014
+  packageName: 'VS Controller: Best FPS Controller Mobile/PC & Interaction System'
+  packageVersion: 4.4.1
+  assetPath: Assets/VS Controller/Scripts/Editor/DamageCurve.curves
+  uploadId: 972560

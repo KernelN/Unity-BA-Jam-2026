@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9913da35c2d74ee4bb422cfca599dff, type: 3}
+  m_Name: SoundData
+  m_EditorClassIdentifier: 
+  defaultSteps:
+  - {fileID: 8300000, guid: 84b94ce33a3b14ba098291e9b45e05a1, type: 3}
+  - {fileID: 8300000, guid: ec2e2c0eaf1ab480d8c89b8a22eb2b25, type: 3}
+  - {fileID: 8300000, guid: bc38a22e489a549c091299ae2cbf2d02, type: 3}
+  - {fileID: 8300000, guid: fe6cfecb73bcb4d03b1930c612539dc0, type: 3}
+  - {fileID: 8300000, guid: 3c5503b3764c04407b2b10cf823ccf68, type: 3}
+  - {fileID: 8300000, guid: 225eb294c61b74217a06909e9adf0f43, type: 3}
+  - {fileID: 8300000, guid: 3e15353082f134c3cb8713be203a4329, type: 3}
+  - {fileID: 8300000, guid: cf40cccf38e294d32aed4442c6e79a7f, type: 3}
+  jumpSounds:
+  - {fileID: 8300000, guid: 0fbc77cf5591e400ea732f8b693ce86f, type: 3}
+  - {fileID: 8300000, guid: b3c3455db64334087af9d9e8034aa3ad, type: 3}
+  surfaceSounds:
+  - surfaceTag: Grass
+    surfaceMaterials:
+    - {fileID: 2100000, guid: 5d4f36750243c476f9af4370c87d5400, type: 2}
+    surfaceTextures:
+    - {fileID: 2800000, guid: 1a539e5f07e4049e39c16010196de47c, type: 3}
+    stepSounds:
+    - {fileID: 8300000, guid: 8de3f9f4bf8174aa6bd6887b205248e0, type: 3}
+    - {fileID: 8300000, guid: f4ed9c7e281f1423483fa8cea4c1511d, type: 3}
+    - {fileID: 8300000, guid: 1735a9d81d498410aac5285672efe962, type: 3}
+    - {fileID: 8300000, guid: 00d004a397f2d4954bfdbe44f187d9c7, type: 3}
+    - {fileID: 8300000, guid: 2c4cedde0ad874dad86cea0119027fb5, type: 3}
+    - {fileID: 8300000, guid: 0216ac56dac794048ae5935bb1aeb580, type: 3}
+  - surfaceTag: Sand
+    surfaceMaterials:
+    - {fileID: 2100000, guid: a91fb5341dc5245c7af4d1b6234c16f0, type: 2}
+    surfaceTextures:
+    - {fileID: 2800000, guid: 37b8f72d9d30840b6ab848cdfa4ac6ca, type: 3}
+    stepSounds:
+    - {fileID: 8300000, guid: eadf11404cce049b28006c7afe405148, type: 3}
+    - {fileID: 8300000, guid: 0e3e3b0d55d3d40b2ab798e49a2dba25, type: 3}
+    - {fileID: 8300000, guid: bf51a254a7fcf4d5ba8f502769276bb9, type: 3}
+    - {fileID: 8300000, guid: fe1f6fe11b3f64945bcfb4ab1a80eee0, type: 3}
+  - surfaceTag: Ground
+    surfaceMaterials:
+    - {fileID: 2100000, guid: 6e2b14c87466d4576aceb6d325175292, type: 2}
+    surfaceTextures:
+    - {fileID: 2800000, guid: b43894d8a19a84402b10eec24268e134, type: 3}
+    stepSounds:
+    - {fileID: 8300000, guid: a94f452a75a7e4b538d29dfbfe61cdaa, type: 3}
+    - {fileID: 8300000, guid: 67297337930e748c5953c1e91fbee0f9, type: 3}
+    - {fileID: 8300000, guid: 2f19b4fb09b5748b3a2bc8f401aa0451, type: 3}
+    - {fileID: 8300000, guid: 658305404ca6c4132980255e83a221da, type: 3}
+    - {fileID: 8300000, guid: 38cb965f48ba94ac1bc03dd338001b16, type: 3}
+    - {fileID: 8300000, guid: 7a3ce9fc6d91749ffa6a4c5bcc3cfe06, type: 3}
+    - {fileID: 8300000, guid: 5f1ec05e5a86d4d68943a747db8073f8, type: 3}
+    - {fileID: 8300000, guid: d5f90c8a22bad4c07a86b7d995829043, type: 3}

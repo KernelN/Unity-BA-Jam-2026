@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 176e54da5f4c344fe8a0671af877a88c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 335014
+  packageName: 'VS Controller: Best FPS Controller Mobile/PC & Interaction System'
+  packageVersion: 4.4.1
+  assetPath: Assets/VS Controller/Scripts/Core/Gameplay/ManualButton.cs
+  uploadId: 972560

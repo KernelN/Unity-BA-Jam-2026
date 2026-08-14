@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 13162b4f7770545679ac0d06fff2704e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 335014
+  packageName: 'VS Controller: Best FPS Controller Mobile/PC & Interaction System'
+  packageVersion: 4.4.1
+  assetPath: Assets/VS Controller/Scripts/Saving/SoundData.asset
+  uploadId: 972560

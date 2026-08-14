@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8421d5f4bd8254b18888730b326f8a83, type: 3}
+  m_Name: FPS Input
+  m_EditorClassIdentifier: 
+  forwardKey: 119
+  backKey: 115
+  leftKey: 97
+  rightKey: 100
+  interactionKey: 101
+  throwKey: 323
+  placementKey: 113
+  crouchKey: 306
+  jumpKey: 32
+  sprintKey: 304
+  noclipKey: 110
+  controlsToggle: 111

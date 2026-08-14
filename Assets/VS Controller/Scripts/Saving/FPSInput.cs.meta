@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 8421d5f4bd8254b18888730b326f8a83
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 335014
+  packageName: 'VS Controller: Best FPS Controller Mobile/PC & Interaction System'
+  packageVersion: 4.4.1
+  assetPath: Assets/VS Controller/Scripts/Saving/FPSInput.cs
+  uploadId: 972560
