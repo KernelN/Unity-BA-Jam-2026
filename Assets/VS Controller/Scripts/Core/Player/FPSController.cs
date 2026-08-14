@@ -112,7 +112,7 @@ namespace VSController
             playerCamera = lookController.playerCamera;
             initialCameraHeight = playerCamera.localPosition.y;
 
-            UIManager.GetJumpButton().onClick.AddListener(Jump);
+            UIManager.GetJumpButton()?.onClick.AddListener(Jump);
 
             SetupButtonHold(UIManager.GetSprintButton(),
               () => sprintButtonHeld = true,
