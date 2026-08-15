@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -35,7 +36,7 @@ namespace UnityBaJam2026.Gameplay.Interaction
                 return;
             }
             
-            if(interactable.validInteractionTags.Contains(interactorSetting.tag))
+            if(interactable.interactions.Any(inter => inter.tag == interactorSetting.tag))
                 interactorUI.color = interactorUIActiveColor;
             else 
                 interactorUI.color = interactorUIColor;

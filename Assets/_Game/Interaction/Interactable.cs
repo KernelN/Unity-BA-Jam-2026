@@ -1,33 +1,55 @@
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace UnityBaJam2026.Gameplay.Interaction
 {
+    //Depends on "https://github.com/mackysoft/Unity-SerializeReferenceExtensions" for reactions
     public class Interactable : MonoBehaviour
     {
-        public List<InteractionTag> validInteractionTags;
+        [System.Serializable]
+        public class InteractionReactions
+        {
+            [HideInInspector] public string name;
+            public InteractionTag tag;
+            [SerializeReference, SubclassSelector]
+            public List<Reaction> reactions;
+        }
+        
+        public List<InteractionReactions> interactions;
 
-        Dictionary<InteractionTag, Reaction> reactions;
+        Dictionary<InteractionTag, List<Reaction>> reactionsPerInteraction;
         
         void Awake()
         {
-            reactions = new Dictionary<InteractionTag, Reaction>();
+            reactionsPerInteraction = new Dictionary<InteractionTag, List<Reaction>>();
         }
-        public void SetReaction(Reaction reaction, InteractionTag interactionTag)
+
+        void OnValidate()
         {
-            reactions.TryAdd(interactionTag, reaction);
+            foreach(var interaction in interactions)
+                interaction.name = interaction.tag.ToString();
         }
+
         public void GetInteracted(InteractionTag[] interactionTags)
         {
             for (var i = 0; i < interactionTags.Length; i++)
-                if (validInteractionTags.Contains(interactionTags[i]))
+                if (interactions.Any(interaction => interaction.tag == interactionTags[i]))
                 {
-                    reactions.TryGetValue(interactionTags[i], out Reaction reaction);
-                    if(reaction != null) reaction.Execute();
+                    reactionsPerInteraction.TryGetValue(interactionTags[i], 
+                                                            out List<Reaction> reactionList);
+                    if(reactionList != null) 
+                        foreach(var reaction in reactionList)
+                            reaction.Execute();
                     return;
                 }
+        }
+        public void SetReaction(InteractionTag interactionTag, Reaction reaction)
+        {
+            if(reactionsPerInteraction.TryGetValue(interactionTag, out List<Reaction> reactionList))
+                reactionList.Add(reaction);
+            else
+                reactionsPerInteraction.Add(interactionTag, new List<Reaction> {reaction});
         }
     }
 }
