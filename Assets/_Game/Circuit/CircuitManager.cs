@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace UnityBaJam2026.Gameplay.Circuit
 {
@@ -32,10 +33,10 @@ namespace UnityBaJam2026.Gameplay.Circuit
         bool isComplete;
         bool isDisabled;
 
-        public Action<CircuitManager> CircuitLocked;
-        public Action<float> CircuitPerUpdated;
-        public Action<bool> CircuitCompleted;
-        public Action<bool> ForcedActive;
+        public UnityEvent<float> CircuitPercentageUpdated;
+        public UnityEvent<bool> CircuitCompleted;
+        public UnityEvent CircuitLocked;
+        public UnityEvent<bool> ForcedActive;
         
         public float Percent { get; private set; }
         
@@ -67,7 +68,7 @@ namespace UnityBaJam2026.Gameplay.Circuit
             if (forceLocked)
             {
                 activeLocked = true;
-                CircuitLocked?.Invoke(this);
+                CircuitLocked?.Invoke();
             }
             
             ForcedActive?.Invoke(isComplete);
@@ -125,7 +126,7 @@ namespace UnityBaJam2026.Gameplay.Circuit
         void LockActivation()
         {
             activeLocked = true;
-            CircuitLocked?.Invoke(this);
+            CircuitLocked?.Invoke();
         }
         void CheckPartActivation(CircuitPart part, bool sendEvent = true)
         {
@@ -160,7 +161,7 @@ namespace UnityBaJam2026.Gameplay.Circuit
             
             if(!sendEvent) return;
             
-            CircuitPerUpdated?.Invoke(Percent);
+            CircuitPercentageUpdated?.Invoke(Percent);
 
             if (wasComplete == isComplete) return;
             CircuitCompleted?.Invoke(isComplete);

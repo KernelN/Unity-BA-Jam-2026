@@ -119,6 +119,67 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &51898682
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 51898684}
+  - component: {fileID: 51898683}
+  m_Layer: 0
+  m_Name: CircuitManager A
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &51898683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51898682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73959fca85ae79145873128d23e93348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Circuit.CircuitManager
+  circuitParts: []
+  mode: 0
+  partsNeeded: 0
+  timeToLockActive: -1
+  canDeactivate: 1
+  CircuitPercentageUpdated:
+    m_PersistentCalls:
+      m_Calls: []
+  CircuitCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+  CircuitLocked:
+    m_PersistentCalls:
+      m_Calls: []
+  ForcedActive:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &51898684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51898682}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.13196, y: 0.89656, z: -1.52639}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &94342115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -326,7 +387,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7411e7f42992016428cc9b5e658ae0a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Interaction.Interactable
-  validInteractionTags: 02000000
+  interactions: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &492734898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,24 +404,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Interaction.Door
   interactable: {fileID: 492734897}
-  onBreak:
-    collider: {fileID: 857719462}
-    _renderer: {fileID: 857719463}
-    particleSystem: {fileID: 0}
-    audioSource: {fileID: 0}
-    breakSound: {fileID: 0}
-  onGrab:
-    collider: {fileID: 0}
-    _renderer: {fileID: 0}
-    particleSystem: {fileID: 0}
-    audioSource: {fileID: 0}
-    breakSound: {fileID: 0}
-  onPress:
-    collider: {fileID: 0}
-    _renderer: {fileID: 0}
-    particleSystem: {fileID: 0}
-    audioSource: {fileID: 0}
-    breakSound: {fileID: 0}
+  onBreak: {collider: {fileID: 857719462}, _renderer: {fileID: 857719463}, particleSystem: {fileID: 0}, audioSource: {fileID: 0}, breakSound: {fileID: 0}}
+  onGrab: {collider: {fileID: 0}, _renderer: {fileID: 0}, particleSystem: {fileID: 0}, audioSource: {fileID: 0}, breakSound: {fileID: 0}}
+  onPress: {collider: {fileID: 0}, _renderer: {fileID: 0}, particleSystem: {fileID: 0}, audioSource: {fileID: 0}, breakSound: {fileID: 0}}
 --- !u!114 &510148760 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7042964221945028903, guid: a84912dec2dae424ea4db524b1f8b386, type: 3}
@@ -441,8 +490,8 @@ GameObject:
   - component: {fileID: 857719464}
   - component: {fileID: 857719463}
   - component: {fileID: 857719462}
-  - component: {fileID: 857719461}
   - component: {fileID: 857719460}
+  - component: {fileID: 857719466}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -462,38 +511,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7411e7f42992016428cc9b5e658ae0a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Interaction.Interactable
-  validInteractionTags: 01000000
---- !u!114 &857719461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 857719459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49eb873f96e933b458eefde4cd7d8899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Interaction.Door
-  interactable: {fileID: 857719460}
-  onBreak:
-    collider: {fileID: 857719462}
-    _renderer: {fileID: 857719463}
-    particleSystem: {fileID: 0}
-    audioSource: {fileID: 0}
-    breakSound: {fileID: 0}
-  onGrab:
-    collider: {fileID: 0}
-    _renderer: {fileID: 0}
-    particleSystem: {fileID: 0}
-    audioSource: {fileID: 0}
-    breakSound: {fileID: 0}
-  onPress:
-    collider: {fileID: 0}
-    _renderer: {fileID: 0}
-    particleSystem: {fileID: 0}
-    audioSource: {fileID: 0}
-    breakSound: {fileID: 0}
+  interactions:
+  - name: Break
+    tag: 1
+    reactions:
+    - rid: 6184426687431967049
+  - name: Press
+    tag: 0
+    reactions:
+    - rid: 6184426687431967120
+  references:
+    version: 2
+    RefIds:
+    - rid: 6184426687431967049
+      type: {class: ReactionBreak, ns: UnityBaJam2026.Gameplay.Interaction, asm: Assembly-CSharp}
+      data:
+        collider: {fileID: 0}
+        _renderer: {fileID: 0}
+        particleSystem: {fileID: 0}
+        audioSource: {fileID: 0}
+        breakSound: {fileID: 0}
+    - rid: 6184426687431967120
+      type: {class: ReactionUnityEvent, ns: UnityBaJam2026.Gameplay.Interaction, asm: Assembly-CSharp}
+      data:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 857719466}
+              m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+              m_MethodName: SetTrigger
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
 --- !u!65 &857719462
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -587,6 +642,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &857719466
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857719459}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1063144027
 GameObject:
   m_ObjectHideFlags: 0
@@ -1110,3 +1187,4 @@ SceneRoots:
   - {fileID: 1308895694677536509}
   - {fileID: 94342115}
   - {fileID: 857719465}
+  - {fileID: 51898684}
