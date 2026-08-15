@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6675a0eb1dc823468727f2398bd5edd, type: 3}
-  m_Name: ClubArm
+  m_Name: Arm-Stick
   m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Parts.PartSettings
   type: 1
-  partUI: {fileID: -500185350, guid: 333abc4c31df647baae96f45818d439a, type: 3}
-  innerSettings: {fileID: 11400000, guid: 9f72ef17c3afbeb46afe47bd87596f66, type: 2}
+  partUI: {fileID: 569936090, guid: 243d9ded3180944e8815ae204a35338e, type: 3}
+  innerSettings: {fileID: 11400000, guid: 62d7f43b38001f848a3b3a21f723cea4, type: 2}

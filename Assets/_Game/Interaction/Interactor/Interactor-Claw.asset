@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c28dfc1937ca5994eb921d8534b6a6f4, type: 3}
-  m_Name: ClawInteractor
+  m_Name: Interactor-Claw
   m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Interaction.InteractorSetting
   tag: 2
   reach: 2

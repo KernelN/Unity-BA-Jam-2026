@@ -21,8 +21,12 @@ namespace UnityBaJam2026.Gameplay.Parts
        
         void Awake()
         {
-            if(arms.TryGetValue(armSettings, out var arm))
+            if (arms.TryGetValue(armSettings, out var arm))
+            {
                 currentArm = arm;
+                currentArm.SetActive(true);
+                interactor.SetInteractor((Interaction.InteractorSetting)armSettings.InnerSettings);
+            }
         }
         void Update()
         {

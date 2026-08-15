@@ -26,7 +26,8 @@ namespace UnityBaJam2026.Gameplay.Interaction
        
         void Awake()
         {
-            SetInteractor(startingInteractor);
+            if(interactorSetting == null)
+                SetInteractor(startingInteractor);
         }
         void Update()
         {
@@ -39,7 +40,7 @@ namespace UnityBaJam2026.Gameplay.Interaction
                 currentAnimator.SetTrigger(InteractParam);
             }
             
-            if(lastInteractable) return;
+            if(lastInteractable && playingInteractionAnim) return;
             
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (!Physics.Raycast(ray, out RaycastHit hit, reach, rayLayers))
