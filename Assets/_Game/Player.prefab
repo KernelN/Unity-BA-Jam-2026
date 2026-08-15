@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4907192705679956623, guid: 3a4ea9eace09741b98b5a4b00f7ada34, type: 3}
+      propertyPath: objectTypes.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5908893712636853401, guid: 3a4ea9eace09741b98b5a4b00f7ada34, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.87529
@@ -48,12 +52,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7200828905450066582, guid: 3a4ea9eace09741b98b5a4b00f7ada34, type: 3}
+      propertyPath: grabbing
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8890195379046504662, guid: 3a4ea9eace09741b98b5a4b00f7ada34, type: 3}
       propertyPath: m_Name
-      value: Camera&Controller Variant
+      value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4907192705679956623, guid: 3a4ea9eace09741b98b5a4b00f7ada34, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8890195379046504662, guid: 3a4ea9eace09741b98b5a4b00f7ada34, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1513290639268825702}
   m_SourcePrefab: {fileID: 100100000, guid: 3a4ea9eace09741b98b5a4b00f7ada34, type: 3}
+--- !u!1 &553180390369545955 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8890195379046504662, guid: 3a4ea9eace09741b98b5a4b00f7ada34, type: 3}
+  m_PrefabInstance: {fileID: 8992873967242090037}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1513290639268825702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553180390369545955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe2d7ddce0c1a084bb249ef882b12d6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Interaction.Interactor
+  startingInteractor: {fileID: 11400000, guid: 9f72ef17c3afbeb46afe47bd87596f66, type: 2}
+  interactorUI: {fileID: 0}
+  interactorUIColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  interactorUIActiveColor: {r: 1, g: 1, b: 1, a: 1}
