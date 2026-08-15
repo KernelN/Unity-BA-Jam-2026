@@ -3,7 +3,7 @@ using UnityEngine;
 namespace UnityBaJam2026.Gameplay.Interaction
 {
     [CreateAssetMenu(fileName = "InteractorSetting", menuName = "Scriptable Objects/InteractorSetting")]
-    public class InteractorSetting : ScriptableObject
+    public class InteractorSetting : Parts.PartInnerSettings
     {
         [Header("Interaction")]
         public InteractionTag tag;

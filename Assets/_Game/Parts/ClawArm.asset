@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6675a0eb1dc823468727f2398bd5edd, type: 3}
+  m_Name: ClawArm
+  m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Parts.PartSettings
+  type: 1
+  partUI: {fileID: 1263689896, guid: 243d9ded3180944e8815ae204a35338e, type: 3}
+  innerSettings: {fileID: 11400000, guid: 4ea24cff0851bd94faa708499e3f24c3, type: 2}
