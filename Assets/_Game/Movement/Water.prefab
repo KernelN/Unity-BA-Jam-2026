@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7971193358691790898}
   - component: {fileID: 4702664890102618881}
   - component: {fileID: 6070469079358672546}
+  - component: {fileID: 1912735423474939094}
   m_Layer: 0
   m_Name: Box Volume
   m_TagString: Untagged
@@ -71,6 +72,20 @@ MonoBehaviour:
   blendDistance: 0.15
   weight: 1
   sharedProfile: {fileID: 11400000, guid: 1e7b5419c132e404dac18842006e715f, type: 2}
+--- !u!114 &1912735423474939094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2756339325991707977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 567d50296803ef347993f87c6ddac4d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Vision.PostProcessSelector
+  volumeType: 1
+  volume: {fileID: 6070469079358672546}
 --- !u!1 &5040238038617865759
 GameObject:
   m_ObjectHideFlags: 0

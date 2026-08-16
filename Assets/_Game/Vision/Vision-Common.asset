@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9214645347717ce498e0641afa73bc98, type: 3}
+  m_Name: Vision-Common
+  m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Vision.VisionModifierSettings
+  renderingLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  surfaceVision: {fileID: 11400000, guid: 2a7d98d800ff1114f9b60f52938b9f67, type: 2}
+  waterVision: {fileID: 11400000, guid: 1e7b5419c132e404dac18842006e715f, type: 2}
+  bloodVision: {fileID: 11400000, guid: 7fb5bfeadb87b0549a90c8cff53f6ba1, type: 2}

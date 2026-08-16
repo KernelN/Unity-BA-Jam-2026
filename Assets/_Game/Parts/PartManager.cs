@@ -5,27 +5,33 @@ namespace UnityBaJam2026.Gameplay.Parts
 {
     public class PartManager : MonoBehaviour
     {
+        [Header("Pick Up")]
+        [SerializeField] float reach;
+        [SerializeField] LayerMask rayLayers;
+        [SerializeField] Image partPickerUI;
+        
+        [Header("Eye")]
+        [SerializeField] Vision.VisionModifier visionModifier;
+        [SerializeField] PartSettings eyeSettings;
+        [SerializeField] Image eyeUI;
+        
         [Header("Arm")]
         [SerializeField] Interaction.Interactor interactor;
         [SerializeField] PartSettings armSettings;
+        [SerializeField] Image armUI;
         [SerializeField] SaintsField.SaintsDictionary<PartSettings, GameObject> arms;
         GameObject currentArm;
 
         [Header("Leg")]
         [SerializeField] Movement.MoveModifier moveModifier;
         [SerializeField] PartSettings legSettings;
-        
-        [Header("Pick Up")]
-        [SerializeField] float reach;
-        [SerializeField] LayerMask rayLayers;
-        
-        [Header("UI")]
-        [SerializeField] Image armUI;
         [SerializeField] Image legUI;
-        [SerializeField] Image partPickerUI;
        
         void Awake()
         {
+            visionModifier.SetSettings((Vision.VisionModifierSettings)eyeSettings.InnerSettings, false);
+            eyeUI.sprite = eyeSettings.PartUI;
+            
             if (arms.TryGetValue(armSettings, out var arm))
             {
                 currentArm = arm;
@@ -33,6 +39,7 @@ namespace UnityBaJam2026.Gameplay.Parts
                 interactor.SetInteractor((Interaction.InteractorSetting)armSettings.InnerSettings);
                 armUI.sprite = armSettings.PartUI;
             }
+            
             moveModifier.SetSettings((Movement.MoveModifierSettings)legSettings.InnerSettings);
             legUI.sprite = legSettings.PartUI;
         }
@@ -57,6 +64,11 @@ namespace UnityBaJam2026.Gameplay.Parts
             {
                 switch (part.Type)
                 {
+                    case PartType.Eye:
+                        eyeSettings = part.SwapSettings(eyeSettings);
+                        visionModifier.SetSettings((Vision.VisionModifierSettings)eyeSettings.InnerSettings);
+                        eyeUI.sprite = eyeSettings.PartUI;
+                        break;
                     case PartType.Arm:
                        armSettings = part.SwapSettings(armSettings); 
                        interactor.SetInteractor((Interaction.InteractorSetting)armSettings.InnerSettings);

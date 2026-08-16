@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Leg-Wheel
   m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Parts.PartSettings
   type: 2
-  partUI: {fileID: 439262858, guid: 58ddd9b0823b446b087508228a54a917, type: 3}
+  partUI: {fileID: 21300000, guid: f1c1f83d9cfe917439e89a42d35650a5, type: 3}
   innerSettings: {fileID: 11400000, guid: fec72036770940e4895a7336f844ec6a, type: 2}

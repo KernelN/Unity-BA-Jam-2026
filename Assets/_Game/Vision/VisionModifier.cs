@@ -1,9 +1,8 @@
-using System;
-using UnityBaJam2026.Gameplay.Vision;
+using UnityBaJam2026.Gameplay.Parts;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace UnityBaJam2026.Gameplay
+namespace UnityBaJam2026.Gameplay.Vision
 {
     public class VisionModifier : MonoBehaviour
     {
@@ -12,27 +11,57 @@ namespace UnityBaJam2026.Gameplay
         
         [Header("References")]
         [SerializeField] Camera playerCamera;
-        [SerializeField] PostProcessingManager postProcessingManager;
+        PostProcessingManager postProcessingManager;
         
         [Header("Blind Effect")]
-        [SerializeField] Volume surfaceVision;
-        [SerializeField] float minVignette;
-        float maxVignette;
+        [SerializeField] Volume blindVolume;
+        [SerializeField] float goBlindTime = .1f;
+        [SerializeField] float blindTime = .1f;
+        [SerializeField] float exitBlindTime = .1f;
 
-        public async void SetSettings(VisionModifierSettings settings)
+        void Start()
+        {
+            if(currentSettings == null) SetSettings(startingSettings);
+        }
+        public async void SetSettings(VisionModifierSettings settings, bool smoothSet = true)
         {
             currentSettings = settings;
             
             if(!currentSettings) return;
+            
+            if(!postProcessingManager)
+                postProcessingManager = PostProcessingManager.inst;
 
-            await GoBlind();
+            if(smoothSet)
+                await GoBlind();
             
             playerCamera.cullingMask = settings.RenderingLayers;
             postProcessingManager.SetVolume(settings.SurfaceVision, VolumeType.Surface);
+
+            if(smoothSet)
+                await ExitBlind();
         }
         async Awaitable GoBlind()
         {
-            
+            float timer = 0;
+            while (timer < goBlindTime)
+            {
+                timer += Time.deltaTime;
+                blindVolume.weight = Mathf.Lerp(0, 1, timer / goBlindTime);
+                await Awaitable.NextFrameAsync();
+            }
+        }
+        async Awaitable ExitBlind()
+        {
+            await Awaitable.WaitForSecondsAsync(blindTime);
+
+            float timer = 0;
+            while (timer < exitBlindTime)
+            {
+                timer += Time.deltaTime;
+                blindVolume.weight = Mathf.Lerp(1, 0, timer / exitBlindTime);
+                await Awaitable.NextFrameAsync();
+            }
         }
     }
 }

@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 6617434507884985228}
   - component: {fileID: 2243743172077667491}
   - component: {fileID: 7753669687715063970}
-  - component: {fileID: 1513290639268825702}
   - component: {fileID: 5889402694566119371}
+  - component: {fileID: 1513290639268825702}
   - component: {fileID: 4713339371724951589}
+  - component: {fileID: 4549677406010799691}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -39,6 +40,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1712178029855287569}
+  - {fileID: 5832181056971745045}
+  - {fileID: 4008092255014238515}
+  - {fileID: 6326219133046287016}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &6960970744175559737
@@ -323,6 +327,129 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5889402694566119371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553180390369545955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1e3ab4d59274ef4cbb4f0bc414c6643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Parts.PartManager
+  reach: 2
+  rayLayers:
+    serializedVersion: 2
+    m_Bits: 1
+  partPickerUI: {fileID: 0}
+  visionModifier: {fileID: 4549677406010799691}
+  eyeSettings: {fileID: 11400000, guid: 9ec10ff80fb6be24fb613e5a13e63ecc, type: 2}
+  eyeUI: {fileID: 0}
+  interactor: {fileID: 1513290639268825702}
+  armSettings: {fileID: 11400000, guid: 68576414abc35c34887c8a8b0a7631e4, type: 2}
+  armUI: {fileID: 0}
+  arms:
+    _saintsKeys:
+    - value: {fileID: 11400000, guid: 6246686b39cb2a541a58923b209a4ea3, type: 2}
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        intValues: 
+        V: {fileID: 0}
+        VRef:
+          rid: -2
+        IsVRef: 0
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    - value: {fileID: 11400000, guid: 510df0a80d55c174da0a7bf15e3de433, type: 2}
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        intValues: 
+        V: {fileID: 0}
+        VRef:
+          rid: -2
+        IsVRef: 0
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    - value: {fileID: 11400000, guid: 68576414abc35c34887c8a8b0a7631e4, type: 2}
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        intValues: 
+        V: {fileID: 0}
+        VRef:
+          rid: -2
+        IsVRef: 0
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    _wrapTypeKey: 4
+    _saintsValues:
+    - value: {fileID: 6069004070995663850}
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        intValues: 
+        V: {fileID: 0}
+        VRef:
+          rid: -2
+        IsVRef: 0
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    - value: {fileID: 2170918163194065840}
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        intValues: 
+        V: {fileID: 0}
+        VRef:
+          rid: -2
+        IsVRef: 0
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    - value: {fileID: 8603354895796471755}
+      valueField:
+        propertyType: 0
+        longValue: 0
+        uLongValue: 0
+        stringValue: 
+        intValues: 
+        V: {fileID: 0}
+        VRef:
+          rid: -2
+        IsVRef: 0
+      valueArray: []
+      valueList: []
+      wrapType: 4
+    _wrapTypeValue: 4
+    saintsSerializedVersion: 2
+    _keys: []
+    _values: []
+  moveModifier: {fileID: 4713339371724951589}
+  legSettings: {fileID: 11400000, guid: b8c38e26546225347a104597ac186243, type: 2}
+  legUI: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
 --- !u!114 &1513290639268825702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -436,126 +563,6 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
---- !u!114 &5889402694566119371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 553180390369545955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1e3ab4d59274ef4cbb4f0bc414c6643, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Parts.PartManager
-  interactor: {fileID: 1513290639268825702}
-  armSettings: {fileID: 11400000, guid: 68576414abc35c34887c8a8b0a7631e4, type: 2}
-  arms:
-    _saintsKeys:
-    - value: {fileID: 11400000, guid: 6246686b39cb2a541a58923b209a4ea3, type: 2}
-      valueField:
-        propertyType: 0
-        longValue: 0
-        uLongValue: 0
-        stringValue: 
-        intValues: 
-        V: {fileID: 0}
-        VRef:
-          rid: -2
-        IsVRef: 0
-      valueArray: []
-      valueList: []
-      wrapType: 4
-    - value: {fileID: 11400000, guid: 510df0a80d55c174da0a7bf15e3de433, type: 2}
-      valueField:
-        propertyType: 0
-        longValue: 0
-        uLongValue: 0
-        stringValue: 
-        intValues: 
-        V: {fileID: 0}
-        VRef:
-          rid: -2
-        IsVRef: 0
-      valueArray: []
-      valueList: []
-      wrapType: 4
-    - value: {fileID: 11400000, guid: 68576414abc35c34887c8a8b0a7631e4, type: 2}
-      valueField:
-        propertyType: 0
-        longValue: 0
-        uLongValue: 0
-        stringValue: 
-        intValues: 
-        V: {fileID: 0}
-        VRef:
-          rid: -2
-        IsVRef: 0
-      valueArray: []
-      valueList: []
-      wrapType: 4
-    _wrapTypeKey: 4
-    _saintsValues:
-    - value: {fileID: 6069004070995663850}
-      valueField:
-        propertyType: 0
-        longValue: 0
-        uLongValue: 0
-        stringValue: 
-        intValues: 
-        V: {fileID: 0}
-        VRef:
-          rid: -2
-        IsVRef: 0
-      valueArray: []
-      valueList: []
-      wrapType: 4
-    - value: {fileID: 2170918163194065840}
-      valueField:
-        propertyType: 0
-        longValue: 0
-        uLongValue: 0
-        stringValue: 
-        intValues: 
-        V: {fileID: 0}
-        VRef:
-          rid: -2
-        IsVRef: 0
-      valueArray: []
-      valueList: []
-      wrapType: 4
-    - value: {fileID: 8603354895796471755}
-      valueField:
-        propertyType: 0
-        longValue: 0
-        uLongValue: 0
-        stringValue: 
-        intValues: 
-        V: {fileID: 0}
-        VRef:
-          rid: -2
-        IsVRef: 0
-      valueArray: []
-      valueList: []
-      wrapType: 4
-    _wrapTypeValue: 4
-    saintsSerializedVersion: 2
-    _keys: []
-    _values: []
-  moveModifier: {fileID: 4713339371724951589}
-  legSettings: {fileID: 11400000, guid: b8c38e26546225347a104597ac186243, type: 2}
-  reach: 2
-  rayLayers:
-    serializedVersion: 2
-    m_Bits: 1
-  armUI: {fileID: 0}
-  legUI: {fileID: 0}
-  partPickerUI: {fileID: 0}
-  references:
-    version: 2
-    RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
 --- !u!114 &4713339371724951589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -571,6 +578,24 @@ MonoBehaviour:
   startingSettings: {fileID: 11400000, guid: cb8d423416c76ad48a14135733ffe195, type: 2}
   characterController: {fileID: 6960970744175559737}
   fpsController: {fileID: 4406642479111586992}
+--- !u!114 &4549677406010799691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553180390369545955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86482acb53cd9ab428ba1cecfa20bfc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.VisionModifier
+  startingSettings: {fileID: 11400000, guid: 28a18ea754ba92246a3964c32c8f45fb, type: 2}
+  playerCamera: {fileID: 2314522196378445777}
+  blindVolume: {fileID: 8503527091891966249}
+  goBlindTime: 0.15
+  blindTime: 0.3
+  exitBlindTime: 0.3
 --- !u!1 &832615358376585644
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,7 +641,6 @@ GameObject:
   - component: {fileID: 4887052662905614934}
   - component: {fileID: 2314522196378445777}
   - component: {fileID: 1521181466733740566}
-  - component: {fileID: 8897036937224038690}
   - component: {fileID: 8470148062070953236}
   m_Layer: 0
   m_Name: Camera
@@ -700,23 +724,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1295811184910008316}
   m_Enabled: 1
---- !u!114 &8897036937224038690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1295811184910008316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.Volume
-  m_IsGlobal: 1
-  priority: 0
-  blendDistance: 0
-  weight: 1
-  sharedProfile: {fileID: 11400000, guid: 2a7d98d800ff1114f9b60f52938b9f67, type: 2}
 --- !u!114 &8470148062070953236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1069,6 +1076,55 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &2525197586251454687
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4008092255014238515}
+  - component: {fileID: 8503527091891966249}
+  m_Layer: 0
+  m_Name: Blind Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4008092255014238515
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2525197586251454687}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.648, y: -0.8809999, z: -10.461096}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3372493242826271404}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8503527091891966249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2525197586251454687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.Volume
+  m_IsGlobal: 1
+  priority: 10
+  blendDistance: 0
+  weight: 0
+  sharedProfile: {fileID: 11400000, guid: 26ff68c5a11b3654fab37860751cb2ac, type: 2}
 --- !u!1 &3055925898345786119
 GameObject:
   m_ObjectHideFlags: 0
@@ -1135,6 +1191,55 @@ Transform:
   - {fileID: 7354185712605042051}
   m_Father: {fileID: 6275701101318525143}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3877263344781038823
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5832181056971745045}
+  - component: {fileID: 5087256764542411495}
+  m_Layer: 0
+  m_Name: Surface Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5832181056971745045
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3877263344781038823}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.648, y: -0.8809999, z: -10.461096}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3372493242826271404}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5087256764542411495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3877263344781038823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.Volume
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 2a7d98d800ff1114f9b60f52938b9f67, type: 2}
 --- !u!1 &3921427417707060487
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,6 +1384,54 @@ Transform:
   - {fileID: 7776313451880667379}
   m_Father: {fileID: 2552880919506562419}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4383093800508876443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6326219133046287016}
+  - component: {fileID: 573217187111337765}
+  m_Layer: 0
+  m_Name: PostProcessManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6326219133046287016
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4383093800508876443}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.648, y: -0.8809999, z: -10.461096}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3372493242826271404}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &573217187111337765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4383093800508876443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c39c275fc5264b48a183e4f9dadb874, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Vision.PostProcessingManager
+  destroyGameObject: 0
+  onVolumeChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &4577206307286430192
 GameObject:
   m_ObjectHideFlags: 0

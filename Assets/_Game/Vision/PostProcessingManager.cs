@@ -9,7 +9,7 @@ namespace UnityBaJam2026.Gameplay.Vision
     
     public class PostProcessingManager : Universal.Singleton<PostProcessingManager>
     {
-        Dictionary<VolumeType, VolumeProfile> profiles;
+        public Dictionary<VolumeType, VolumeProfile> profiles { get; private set; }
         
         public UnityEvent<VolumeType, VolumeProfile> onVolumeChanged;
 

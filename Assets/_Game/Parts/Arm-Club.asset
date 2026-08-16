@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Arm-Club
   m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Parts.PartSettings
   type: 1
-  partUI: {fileID: -500185350, guid: 333abc4c31df647baae96f45818d439a, type: 3}
+  partUI: {fileID: 21300000, guid: 643039db03c4bbe4ab5c97deac741e60, type: 3}
   innerSettings: {fileID: 11400000, guid: 9f72ef17c3afbeb46afe47bd87596f66, type: 2}

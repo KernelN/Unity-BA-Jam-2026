@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Arm-Stick
   m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Parts.PartSettings
   type: 1
-  partUI: {fileID: 569936090, guid: 243d9ded3180944e8815ae204a35338e, type: 3}
+  partUI: {fileID: 21300000, guid: 7d19eef112f851649a04b2c0d8573b20, type: 3}
   innerSettings: {fileID: 11400000, guid: 62d7f43b38001f848a3b3a21f723cea4, type: 2}
