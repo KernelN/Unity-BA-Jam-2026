@@ -34,10 +34,10 @@ namespace UnityBaJam2026.Gameplay.Interaction
 
         void OnValidate()
         {
-            foreach(var interaction in interactions)
-                interaction.name = interaction.tag.ToString();
+            for (var i = 0; i < interactions.Count; i++) 
+                interactions[i].name = interactions[i].tag.ToString();
         }
-        public void GetInteracted(InteractionTag[] interactionTags)
+        public void GetInteracted(InteractionTag[] interactionTags, Interactor interactor)
         {
             for (var i = 0; i < interactionTags.Length; i++)
                 if (interactions.Any(interaction => interaction.tag == interactionTags[i]))
@@ -46,7 +46,7 @@ namespace UnityBaJam2026.Gameplay.Interaction
                                                             out List<Reaction> reactionList);
                     if(reactionList != null) 
                         foreach(var reaction in reactionList)
-                            reaction.Execute();
+                            reaction.Execute(interactor, this);
                     return;
                 }
         }

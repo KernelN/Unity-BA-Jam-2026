@@ -4,6 +4,6 @@ namespace UnityBaJam2026.Gameplay.Interaction
 {
     public enum InteractionTag
     {
-        Press, Break, Grab
+        Press, Break, Grab, Key
     }
 }

@@ -1121,8 +1121,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Interaction.Interactable
   interactions:
-  - name: Break
-    tag: 1
+  - name: Key
+    tag: 3
     reactions:
     - rid: 6184426687431967049
   references:
@@ -1748,6 +1748,14 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a26aed1022b8cf448a0c8166faf68c50, type: 3}
+--- !u!33 &494577951759732698
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4195405689257876165}
+  m_Mesh: {fileID: -4283000455385496155, guid: f3db967c8d9ca47188b19fdb339020f0, type: 3}
 --- !u!1001 &1308895694677536509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1798,11 +1806,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6244236102526622048, guid: a84912dec2dae424ea4db524b1f8b386, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -331.51038
+      value: -331.51035
       objectReference: {fileID: 0}
     - target: {fileID: 6244236102526622048, guid: a84912dec2dae424ea4db524b1f8b386, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -143.04999
+      value: -143.04997
       objectReference: {fileID: 0}
     - target: {fileID: 6264238514426259454, guid: a84912dec2dae424ea4db524b1f8b386, type: 3}
       propertyPath: m_Name
@@ -1810,11 +1818,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6666051431038618638, guid: a84912dec2dae424ea4db524b1f8b386, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -331.56995
+      value: -331.56992
       objectReference: {fileID: 0}
     - target: {fileID: 8414179983025856078, guid: a84912dec2dae424ea4db524b1f8b386, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 84.03398
+      value: 84.033966
       objectReference: {fileID: 0}
     - target: {fileID: 8857209957359806597, guid: a84912dec2dae424ea4db524b1f8b386, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1912,6 +1920,56 @@ PrefabInstance:
       addedObject: {fileID: 98888763}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a84912dec2dae424ea4db524b1f8b386, type: 3}
+--- !u!23 &2394207800351914768
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4195405689257876165}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: ceb501bd1b38447b09b647f692591587, type: 2}
+  - {fileID: 2100000, guid: 08d23b74063a0409ea6754973cb1a5c8, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1001 &3192216114595861649
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2025,18 +2083,6 @@ PrefabInstance:
       propertyPath: interactorUI
       value: 
       objectReference: {fileID: 797925147}
-    - target: {fileID: 1513290639268825702, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
-      propertyPath: interactorUIColor.b
-      value: 0.2264151
-      objectReference: {fileID: 0}
-    - target: {fileID: 1513290639268825702, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
-      propertyPath: interactorUIColor.g
-      value: 0.2264151
-      objectReference: {fileID: 0}
-    - target: {fileID: 1513290639268825702, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
-      propertyPath: interactorUIColor.r
-      value: 0.2264151
-      objectReference: {fileID: 0}
     - target: {fileID: 3372493242826271404, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.82
@@ -2115,6 +2161,21 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 2314522196378445777, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
   m_PrefabInstance: {fileID: 3356563746704924597}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &3563125293989101695
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4195405689257876165}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -11.389, y: 1.553, z: -3.22}
+  m_LocalScale: {x: 0.5669, y: 0.5669, z: 0.5669}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3904873926296393097
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2156,6 +2217,100 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba7fb23f7c6120e4cbe4b474fb723428, type: 3}
+--- !u!1 &4195405689257876165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3563125293989101695}
+  - component: {fileID: 494577951759732698}
+  - component: {fileID: 2394207800351914768}
+  - component: {fileID: 4614990201468748872}
+  - component: {fileID: 6240779948421638423}
+  - component: {fileID: 6240779948421638424}
+  m_Layer: 0
+  m_Name: Move Cube
+  m_TagString: MoveCube
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &4614990201468748872
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4195405689257876165}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &6240779948421638423
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4195405689257876165}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &6240779948421638424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4195405689257876165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7411e7f42992016428cc9b5e658ae0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Interaction.Interactable
+  interactions:
+  - name: Grab
+    tag: 2
+    reactions:
+    - rid: 6184426732054642823
+  references:
+    version: 2
+    RefIds:
+    - rid: 6184426732054642823
+      type: {class: ReactionPickUp, ns: UnityBaJam2026.Gameplay.Interaction, asm: Assembly-CSharp}
+      data:
+        pickableInteractorSettings: {fileID: 11400000, guid: 563ce5141e1ec0b439b611d07c8ce4bd, type: 2}
+        objectRigidbody: {fileID: 6240779948421638423}
 --- !u!1001 &6691216619071606212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2245,3 +2400,4 @@ SceneRoots:
   - {fileID: 156022536}
   - {fileID: 728043210}
   - {fileID: 229881455}
+  - {fileID: 3563125293989101695}
