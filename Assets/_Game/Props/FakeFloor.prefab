@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1536369067995455017}
   - component: {fileID: 597082867120541004}
   - component: {fileID: 4852659640849282927}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FakeFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
