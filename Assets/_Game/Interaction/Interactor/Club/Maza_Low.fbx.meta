@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c3d741500a8eebe4786e608531b95334
+guid: b616df2733ee1f14e9c029f49ca811b2
 ModelImporter:
   serializedVersion: 24501
   internalIDToNameTable: []
@@ -7,13 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Dedos1
-    second: {fileID: 2100000, guid: bc03fc0a10f8c4749b464c9e9d2808b2, type: 2}
+      name: Clavo
+    second: {fileID: 2100000, guid: b61c0bd255392334e92d767d146a0cf6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Mano1
-    second: {fileID: 2100000, guid: 555ba40fc23a2c1448ee917a332630ed, type: 2}
+      name: Maza
+    second: {fileID: 2100000, guid: 09bba7e3eb8f1354e97c032c329f92fd, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

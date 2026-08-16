@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c3d741500a8eebe4786e608531b95334
+guid: efb6d9410c4da0a4aa23d3d0da552d3a
 ModelImporter:
   serializedVersion: 24501
   internalIDToNameTable: []
@@ -7,13 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Dedos1
-    second: {fileID: 2100000, guid: bc03fc0a10f8c4749b464c9e9d2808b2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Mano1
-    second: {fileID: 2100000, guid: 555ba40fc23a2c1448ee917a332630ed, type: 2}
+      name: standardSurface3
+    second: {fileID: 2100000, guid: 566a20962cecc80499a70b2e13586bd5, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -105,7 +100,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 6
+    globalScale: 0.06
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
