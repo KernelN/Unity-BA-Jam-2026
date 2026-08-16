@@ -16,6 +16,12 @@ namespace UnityBaJam2026.Gameplay.Parts
 
         public PartSettings SwapSettings(PartSettings settings)
         {
+            if (!settings && partSettings)
+            {
+                Destroy(gameObject);
+                return partSettings;
+            }
+            
             PartSettings oldSettings = partSettings;
             partSettings = settings;
             

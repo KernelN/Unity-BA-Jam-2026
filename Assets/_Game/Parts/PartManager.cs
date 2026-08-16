@@ -29,19 +29,31 @@ namespace UnityBaJam2026.Gameplay.Parts
        
         void Awake()
         {
-            visionModifier.SetSettings((Vision.VisionModifierSettings)eyeSettings.InnerSettings, false);
-            eyeUI.sprite = eyeSettings.PartUI;
-            
-            if (arms.TryGetValue(armSettings, out var arm))
+            if (eyeSettings)
             {
-                currentArm = arm;
-                currentArm.SetActive(true);
-                interactor.SetInteractor((Interaction.InteractorSetting)armSettings.InnerSettings);
-                armUI.sprite = armSettings.PartUI;
+                visionModifier.SetSettings((Vision.VisionModifierSettings)eyeSettings.InnerSettings, false);
+                eyeUI.sprite = eyeSettings.PartUI;
             }
+            else eyeUI.sprite = null;
             
-            moveModifier.SetSettings((Movement.MoveModifierSettings)legSettings.InnerSettings);
-            legUI.sprite = legSettings.PartUI;
+            if(armSettings)
+            {
+                if (arms.TryGetValue(armSettings, out var arm))
+                {
+                    currentArm = arm;
+                    currentArm.SetActive(true);
+                    interactor.SetInteractor((Interaction.InteractorSetting)armSettings.InnerSettings);
+                    armUI.sprite = armSettings.PartUI;
+                }
+            }
+            else armUI.sprite = null;
+
+            if (legSettings)
+            {
+                moveModifier.SetSettings((Movement.MoveModifierSettings)legSettings.InnerSettings);
+                legUI.sprite = legSettings.PartUI;
+            }
+            else legUI.sprite = null;
         }
         void Update()
         {
@@ -75,9 +87,9 @@ namespace UnityBaJam2026.Gameplay.Parts
                        armUI.sprite = armSettings.PartUI;
                        
                        //swap arm
-                       currentArm.SetActive(false);
+                       currentArm?.SetActive(false);
                        currentArm = arms[armSettings];
-                       currentArm.SetActive(true);
+                       currentArm?.SetActive(true);
                        break;
                     case PartType.Leg:
                         legSettings = part.SwapSettings(legSettings);

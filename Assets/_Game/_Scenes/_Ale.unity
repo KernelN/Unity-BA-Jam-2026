@@ -2037,10 +2037,6 @@ PrefabInstance:
       propertyPath: interactorUIColor.r
       value: 0.2264151
       objectReference: {fileID: 0}
-    - target: {fileID: 2243743172077667491, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
-      propertyPath: grabbing
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3372493242826271404, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.82
@@ -2089,18 +2085,6 @@ PrefabInstance:
       propertyPath: speedText
       value: 
       objectReference: {fileID: 510148760}
-    - target: {fileID: 4549677406010799691, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
-      propertyPath: blindTime
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4549677406010799691, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
-      propertyPath: goBlindTime
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4549677406010799691, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
-      propertyPath: exitBlindTime
-      value: 0.3
-      objectReference: {fileID: 0}
     - target: {fileID: 5889402694566119371, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
       propertyPath: armUI
       value: 

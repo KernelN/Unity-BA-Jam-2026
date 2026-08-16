@@ -31,6 +31,7 @@ namespace UnityBaJam2026.Gameplay.Interaction
         }
         void Update()
         {
+            if(!interactorSetting) return;
             if(playingInteractionAnim) return;
             
             bool pressedInput = Input.GetMouseButtonDown(0);

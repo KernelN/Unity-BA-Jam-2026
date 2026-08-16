@@ -180,7 +180,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 553180390369545955}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e96609613274418599c59ff1673c618, type: 3}
   m_Name: 
@@ -205,20 +205,20 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 3
-      outSlope: 3
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
       inSlope: 0
       outSlope: 0
-      tangentMode: 0
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -348,7 +348,7 @@ MonoBehaviour:
   eyeSettings: {fileID: 11400000, guid: 9ec10ff80fb6be24fb613e5a13e63ecc, type: 2}
   eyeUI: {fileID: 0}
   interactor: {fileID: 1513290639268825702}
-  armSettings: {fileID: 11400000, guid: 68576414abc35c34887c8a8b0a7631e4, type: 2}
+  armSettings: {fileID: 0}
   armUI: {fileID: 0}
   arms:
     _saintsKeys:
@@ -462,7 +462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe2d7ddce0c1a084bb249ef882b12d6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Interaction.Interactor
-  startingInteractor: {fileID: 11400000, guid: 9f72ef17c3afbeb46afe47bd87596f66, type: 2}
+  startingInteractor: {fileID: 0}
   animators:
     _saintsKeys:
     - value: {fileID: 11400000, guid: 4ea24cff0851bd94faa708499e3f24c3, type: 2}
