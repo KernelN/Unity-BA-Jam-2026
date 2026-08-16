@@ -1220,6 +1220,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5832181056971745045}
   - component: {fileID: 5087256764542411495}
+  - component: {fileID: 5253705902022303146}
   m_Layer: 0
   m_Name: Surface Volume
   m_TagString: Untagged
@@ -1259,6 +1260,20 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: 2a7d98d800ff1114f9b60f52938b9f67, type: 2}
+--- !u!114 &5253705902022303146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3877263344781038823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 567d50296803ef347993f87c6ddac4d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Vision.PostProcessSelector
+  volumeType: 0
+  volume: {fileID: 5087256764542411495}
 --- !u!1 &3921427417707060487
 GameObject:
   m_ObjectHideFlags: 0

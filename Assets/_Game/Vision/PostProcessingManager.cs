@@ -32,7 +32,7 @@ namespace UnityBaJam2026.Gameplay.Vision
             }
             else profiles.Add(type, settingsSurfaceVision);
             
-            onVolumeChanged?.Invoke(type,profile);
+            onVolumeChanged?.Invoke(type,settingsSurfaceVision);
         }
     }
 }

@@ -37,6 +37,8 @@ namespace UnityBaJam2026.Gameplay.Vision
             
             playerCamera.cullingMask = settings.RenderingLayers;
             postProcessingManager.SetVolume(settings.SurfaceVision, VolumeType.Surface);
+            postProcessingManager.SetVolume(settings.WaterVision, VolumeType.Water);
+            postProcessingManager.SetVolume(settings.BloodVision, VolumeType.Blood);
 
             if(smoothSet)
                 await ExitBlind();
