@@ -4,8 +4,8 @@
   <Project Path="SaintsField.Runtime.csproj" />
   <Project Path="SaintsField.Editor.ScriptableRenderer.csproj" />
   <Project Path="SaintsField.Editor.Drawer.SaintsEventBaseTypeDrawer.csproj" />
-  <Project Path="SaintsField.Editor.AiNavigation.csproj" />
   <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="SaintsField.Editor.AiNavigation.csproj" />
   <Project Path="SaintsField.Runtime.Events.csproj" />
   <Project Path="SaintsField.Editor.Drawers.Mathematics.csproj" />
   <Project Path="SaintsField.Runtime.TypeReference.csproj" />
