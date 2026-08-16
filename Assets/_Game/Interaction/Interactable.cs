@@ -34,8 +34,9 @@ namespace UnityBaJam2026.Gameplay.Interaction
 
         void OnValidate()
         {
-            for (var i = 0; i < interactions.Count; i++) 
-                interactions[i].name = interactions[i].tag.ToString();
+            if(interactions != null)
+                for (var i = 0; i < interactions.Count; i++) 
+                    interactions[i].name = interactions[i].tag.ToString();
         }
         public void GetInteracted(InteractionTag[] interactionTags, Interactor interactor)
         {

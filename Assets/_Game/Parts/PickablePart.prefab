@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1493824569500204448}
   - component: {fileID: 6053365036598290150}
   - component: {fileID: 8344932381157975661}
+  - component: {fileID: 1119668448314360851}
+  - component: {fileID: 5108846667841659046}
   m_Layer: 0
   m_Name: PickablePart
   m_TagString: Untagged
@@ -54,7 +56,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.6, y: 0.6, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6053365036598290150
 MonoBehaviour:
@@ -82,6 +84,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d27c8b9eca213fe42b1661e7365c51de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.SpriteBillboard
+--- !u!114 &1119668448314360851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4371194661079681812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7411e7f42992016428cc9b5e658ae0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Interaction.Interactable
+  interactions:
+  - name: Grab
+    tag: 2
+    reactions:
+    - rid: 6184426734167523444
+  references:
+    version: 2
+    RefIds:
+    - rid: 6184426734167523444
+      type: {class: ReactionPickUp, ns: UnityBaJam2026.Gameplay.Interaction, asm: Assembly-CSharp}
+      data:
+        pickableInteractorSettings: {fileID: 0}
+        objectRigidbody: {fileID: 5108846667841659046}
+--- !u!54 &5108846667841659046
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4371194661079681812}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6283429701585269971
 GameObject:
   m_ObjectHideFlags: 0
