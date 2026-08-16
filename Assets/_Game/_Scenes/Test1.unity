@@ -13158,11 +13158,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 788629882360867248, guid: e0185a243629e124cbda375a01f77e87, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4439108789988646134, guid: e0185a243629e124cbda375a01f77e87, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8742423966481302912, guid: e0185a243629e124cbda375a01f77e87, type: 3}
       propertyPath: m_LocalPosition.x
@@ -40983,18 +40983,6 @@ PrefabInstance:
       propertyPath: interactorUI
       value: 
       objectReference: {fileID: 797925147}
-    - target: {fileID: 1513290639268825702, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
-      propertyPath: interactorUIColor.b
-      value: 0.2264151
-      objectReference: {fileID: 0}
-    - target: {fileID: 1513290639268825702, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
-      propertyPath: interactorUIColor.g
-      value: 0.2264151
-      objectReference: {fileID: 0}
-    - target: {fileID: 1513290639268825702, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
-      propertyPath: interactorUIColor.r
-      value: 0.2264151
-      objectReference: {fileID: 0}
     - target: {fileID: 2243743172077667491, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
       propertyPath: grabbing
       value: 
@@ -41039,50 +41027,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4095112357987191994, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
-      propertyPath: objectTypes.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4095112357987191994, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
-      propertyPath: collectedStacks.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4095112357987191994, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
-      propertyPath: objectTypes.Array.data[0].tag
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 4095112357987191994, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
-      propertyPath: objectTypes.Array.data[0].canPickUp
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4095112357987191994, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
-      propertyPath: objectTypes.Array.data[0].spawnBottomToObject
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4095112357987191994, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
-      propertyPath: objectTypes.Array.data[0].enablePlacementPreview
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4095112357987191994, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
-      propertyPath: collectedStacks.Array.data[0].objectType.canPickUp
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4095112357987191994, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
-      propertyPath: collectedStacks.Array.data[0].objectType.activateRange
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4095112357987191994, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
-      propertyPath: collectedStacks.Array.data[0].objectType.deactivateRange
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4095112357987191994, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
-      propertyPath: collectedStacks.Array.data[0].objectType.spawnBottomToObject
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4095112357987191994, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
-      propertyPath: collectedStacks.Array.data[0].objectType.enablePlacementPreview
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4406642479111586992, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
       propertyPath: joystick
       value: 
@@ -41103,10 +41047,6 @@ PrefabInstance:
       propertyPath: legUI
       value: 
       objectReference: {fileID: 1496525704}
-    - target: {fileID: 5889402694566119371, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
-      propertyPath: partUI
-      value: 
-      objectReference: {fileID: 1834041966}
     - target: {fileID: 5889402694566119371, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
       propertyPath: armSettings
       value: 
@@ -41130,65 +41070,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1295811184910008316, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3356563746704924600}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
 --- !u!20 &3356563746704924598 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 2314522196378445777, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
   m_PrefabInstance: {fileID: 3356563746704924597}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3356563746704924599 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1295811184910008316, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
-  m_PrefabInstance: {fileID: 3356563746704924597}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3356563746704924600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3356563746704924599}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
-  m_Version: 2
 --- !u!1001 &3904873926296393097
 PrefabInstance:
   m_ObjectHideFlags: 0

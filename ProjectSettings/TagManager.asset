@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Door
+  - MoveCube
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,8 @@ TagManager:
   - Water
   - UI
   - Bars
-  - Secret
-  - 
+  - Secret-Visible
+  - Secret-Invisible
   - 
   - 
   - 
