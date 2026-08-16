@@ -89,6 +89,8 @@ namespace VSController
             input = Vector3.ClampMagnitude(input, 1f);
 
             Vector3 moveDirection = cam.TransformDirection(input);
+            if(!player.canGoUpInWater)
+                moveDirection.y = 0;
 
             // Multiply speed of movement and deceleration coefficient in water
             moveDirection *= player.moveSpeed * movementDampFactor;

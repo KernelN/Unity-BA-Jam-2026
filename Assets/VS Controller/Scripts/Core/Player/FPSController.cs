@@ -24,6 +24,7 @@ namespace VSController
         public bool canJump = true;                    // Allow jumping
         public bool canCrouch = true;                  // Allow crouching
         public bool freeFly = false;                   // Allow fly mode
+        public bool canGoUpInWater = true;
 
         internal bool isGrounded;                      // Is player currently grounded
         internal Vector3 velocity;                     // Current movement velocity
@@ -864,6 +865,11 @@ namespace VSController
         };
 
         private static readonly Vector3[] singleDown = { Vector3.down };
+
+        public void SetHeight(float newHeight)
+        {
+            standingHeight = newHeight;
+        }
     }
 }
 

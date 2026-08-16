@@ -67,6 +67,9 @@ namespace UnityBaJam2026.Gameplay.Interaction
         public void SetInteractor(InteractorSetting interactor)
         {
             interactorSetting = interactor;
+            
+            if(!interactor) return;
+            
             reach = interactor.reach;
             rayLayers = interactor.rayLayers;
             interactorUI.sprite = interactor.interactUI;

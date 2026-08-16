@@ -1405,6 +1405,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4749770139686490757, guid: 3a4ea9eace09741b98b5a4b00f7ada34, type: 3}
+      propertyPath: canCrouch
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749770139686490757, guid: 3a4ea9eace09741b98b5a4b00f7ada34, type: 3}
       propertyPath: canGoUpInWater
       value: 0
       objectReference: {fileID: 0}
@@ -1490,6 +1494,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8890195379046504662, guid: 3a4ea9eace09741b98b5a4b00f7ada34, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5889402694566119371}
+    - targetCorrespondingSourceObject: {fileID: 8890195379046504662, guid: 3a4ea9eace09741b98b5a4b00f7ada34, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4713339371724951589}
   m_SourcePrefab: {fileID: 100100000, guid: 3a4ea9eace09741b98b5a4b00f7ada34, type: 3}
 --- !u!1 &553180390369545955 stripped
 GameObject:
@@ -1726,8 +1733,28 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
+--- !u!114 &4713339371724951589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553180390369545955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20bebab1c1d3fc747bad3fe9507a584f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Movement.MoveModifier
+  startingSettings: {fileID: 11400000, guid: cb8d423416c76ad48a14135733ffe195, type: 2}
+  characterController: {fileID: 6960970744175559737}
+  fpsController: {fileID: 0}
 --- !u!4 &4887052662905614934 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4548450609410286691, guid: 3a4ea9eace09741b98b5a4b00f7ada34, type: 3}
+  m_PrefabInstance: {fileID: 8992873967242090037}
+  m_PrefabAsset: {fileID: 0}
+--- !u!143 &6960970744175559737 stripped
+CharacterController:
+  m_CorrespondingSourceObject: {fileID: 2042185862257185292, guid: 3a4ea9eace09741b98b5a4b00f7ada34, type: 3}
   m_PrefabInstance: {fileID: 8992873967242090037}
   m_PrefabAsset: {fileID: 0}
