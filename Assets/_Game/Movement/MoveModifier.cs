@@ -16,11 +16,11 @@ namespace UnityBaJam2026.Gameplay.Movement
         
         void Awake()
         {
-            if(!settings)
-                SetSettings(startingSettings);
-            
             baseHeight = characterController.height;
             baseStepOffset = characterController.stepOffset;
+            
+            if(!settings)
+                SetSettings(startingSettings);
         }
         public void SetSettings(MoveModifierSettings settings)
         {
@@ -29,8 +29,8 @@ namespace UnityBaJam2026.Gameplay.Movement
             if(!settings) return;
             
             characterController.includeLayers = settings.ExtraWalkableLayers;
-            characterController.stepOffset = baseStepOffset + settings.StepOffsetMod;
             fpsController.SetHeight(baseHeight+settings.heightMod);
+            characterController.stepOffset = baseStepOffset + settings.StepOffsetMod;
         }
     }
 }

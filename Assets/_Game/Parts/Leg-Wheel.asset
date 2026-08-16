@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6675a0eb1dc823468727f2398bd5edd, type: 3}
+  m_Name: Leg-Wheel
+  m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Parts.PartSettings
+  type: 2
+  partUI: {fileID: 439262858, guid: 58ddd9b0823b446b087508228a54a917, type: 3}
+  innerSettings: {fileID: 11400000, guid: fec72036770940e4895a7336f844ec6a, type: 2}

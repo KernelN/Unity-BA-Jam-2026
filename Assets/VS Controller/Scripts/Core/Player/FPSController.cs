@@ -699,16 +699,19 @@ namespace VSController
         private void Crouch()
         {
             // Permission to crouch
-            if (!canMove || !canCrouch) return;
+            if (!canMove) return;
 
-            if (!useMobileControls && Input.GetKeyDown(InputData.crouchKey))
-                ToggleCrouch();
-
-            // For mobile control
-            if (useMobileControls && crouchButtonPressed)
+            if (canCrouch)
             {
-                ToggleCrouch();
-                crouchButtonPressed = false;
+                if (!useMobileControls && Input.GetKeyDown(InputData.crouchKey))
+                    ToggleCrouch();
+
+                // For mobile control
+                if (useMobileControls && crouchButtonPressed)
+                {
+                    ToggleCrouch();
+                    crouchButtonPressed = false;
+                }
             }
 
             // Maximum height when standing up and permissions for this
@@ -727,6 +730,8 @@ namespace VSController
             center.y += delta * 0.5f;
             controller.center = center;
 
+            if(!canCrouch) return;
+            
             // Change camera height
             float cameraTarget = controller.height - (standingHeight - initialCameraHeight);
             float crouchPercent = Mathf.InverseLerp(standingHeight, crouchHeight, controller.height);
