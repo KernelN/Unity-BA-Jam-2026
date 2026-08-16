@@ -3,16 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags:
-  - Door
-  - Platform Grid
-  - MoveCube
-  - Collectable
-  - Mechanism
-  - Collectable Free
-  - Teleport
-  - JumpCube
-  - Platform Free
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -20,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Bars
   - 
   - 
   - 
@@ -49,9 +40,6 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: UI
-    uniqueID: 3966580681
     locked: 0
   m_RenderingLayers:
   - Default
