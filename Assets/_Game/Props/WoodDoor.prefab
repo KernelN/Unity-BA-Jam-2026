@@ -209,8 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73959fca85ae79145873128d23e93348, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Circuit.CircuitManager
-  circuitParts:
-  - {fileID: 0}
+  circuitParts: []
   mode: 0
   partsNeeded: 1
   timeToLockActive: -1
