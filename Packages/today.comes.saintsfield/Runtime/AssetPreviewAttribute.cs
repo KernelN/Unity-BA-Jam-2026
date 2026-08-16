@@ -1,0 +1,30 @@
+﻿using System;
+using System.Diagnostics;
+using SaintsField.Interfaces;
+using UnityEngine;
+
+namespace SaintsField
+{
+    [Conditional("UNITY_EDITOR")]
+    [AttributeUsage(AttributeTargets.Field, AllowMultiple = true)]
+    public class AssetPreviewAttribute: PropertyAttribute, ISaintsAttribute
+    {
+        public SaintsAttributeType AttributeType => SaintsAttributeType.Other;
+        public string GroupBy { get; }
+
+        public readonly bool Above;
+        public readonly int Width;
+        public readonly int Height;
+        public readonly EAlign Align;
+
+        public AssetPreviewAttribute(int width=128, int height=128, EAlign align=EAlign.FieldStart, bool above=false, string groupBy="")
+        {
+            GroupBy = groupBy;
+
+            Above = above;
+            Width = width;
+            Height = height;
+            Align = align;
+        }
+    }
+}
