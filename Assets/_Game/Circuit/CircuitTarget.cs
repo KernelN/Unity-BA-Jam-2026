@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 namespace UnityBaJam2026.Gameplay.Circuit
 {
-    public class CircuitManager : MonoBehaviour
+    public class CircuitTarget : MonoBehaviour
     {
         [Serializable] 
         enum ActivationModes { AnyActive, AllActive, AtLeast, AtMost }
@@ -46,6 +46,7 @@ namespace UnityBaJam2026.Gameplay.Circuit
         //Unity Events
         private void Awake()
         {
+            activeCircuitParts = new List<CircuitPart>();
             for (int i = 0; i < circuitParts.Count; i++)
                 circuitParts[i].Activated += OnCircuitPartActivated;
         }
