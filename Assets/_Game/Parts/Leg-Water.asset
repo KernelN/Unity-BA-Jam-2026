@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Leg-Water
   m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Parts.PartSettings
   type: 2
-  partUI: {fileID: -2076673896, guid: 58ddd9b0823b446b087508228a54a917, type: 3}
+  partUI: {fileID: 21300000, guid: 06c8b6197b4d62c479aff23a761c73aa, type: 3}
   innerSettings: {fileID: 11400000, guid: cb8d423416c76ad48a14135733ffe195, type: 2}

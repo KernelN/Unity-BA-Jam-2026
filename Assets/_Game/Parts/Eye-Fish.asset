@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Eye-Fish
   m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Parts.PartSettings
   type: 0
-  partUI: {fileID: -656432198, guid: 333abc4c31df647baae96f45818d439a, type: 3}
+  partUI: {fileID: 21300000, guid: 5fa5a6a951d04144e8035662159b5b44, type: 3}
   innerSettings: {fileID: 11400000, guid: b9c21270fb6e634489e63006a144b401, type: 2}

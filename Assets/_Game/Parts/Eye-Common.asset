@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Eye-Common
   m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Parts.PartSettings
   type: 0
-  partUI: {fileID: 21300000, guid: 63f94546c9cf3ba41be82592334e1162, type: 3}
+  partUI: {fileID: 21300000, guid: 9406f79123a9c5e4ab19b15f6a0704a9, type: 3}
   innerSettings: {fileID: 11400000, guid: 28a18ea754ba92246a3964c32c8f45fb, type: 2}
