@@ -2253,6 +2253,10 @@ PrefabInstance:
       propertyPath: interactorUI
       value: 
       objectReference: {fileID: 797925147}
+    - target: {fileID: 3162273098306810269, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3372493242826271404, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.82
