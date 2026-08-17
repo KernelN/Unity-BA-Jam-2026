@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7969a544039aa442ba6b97b77350d9d, type: 3}
   m_Name: MoveMod-WaterWalk
   m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Movement.MoveModifierSettings
-  heightMod: -1
+  heightMod: 0
   stepOffsetMod: -0.15
   extraWalkableLayers:
     serializedVersion: 2
