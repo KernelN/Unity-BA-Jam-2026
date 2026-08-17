@@ -40,6 +40,8 @@ namespace UnityBaJam2026.Gameplay.Interaction
         }
         public void GetInteracted(InteractionTag[] interactionTags, Interactor interactor)
         {
+            if(!enabled) return;
+            
             for (var i = 0; i < interactionTags.Length; i++)
                 if (interactions.Any(interaction => interaction.tag == interactionTags[i]))
                 {
