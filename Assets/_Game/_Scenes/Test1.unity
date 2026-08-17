@@ -872,67 +872,6 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
---- !u!1 &51898682
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 51898684}
-  - component: {fileID: 51898683}
-  m_Layer: 0
-  m_Name: CircuitManager A
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &51898683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 51898682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73959fca85ae79145873128d23e93348, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Circuit.CircuitManager
-  circuitParts: []
-  mode: 0
-  partsNeeded: 0
-  timeToLockActive: -1
-  canDeactivate: 1
-  CircuitPercentageUpdated:
-    m_PersistentCalls:
-      m_Calls: []
-  CircuitCompleted:
-    m_PersistentCalls:
-      m_Calls: []
-  CircuitLocked:
-    m_PersistentCalls:
-      m_Calls: []
-  ForcedActive:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!4 &51898684
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 51898682}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.13196, y: 0.89656, z: -1.52639}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &65350661
 Mesh:
   m_ObjectHideFlags: 0
@@ -6960,39 +6899,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8806073604466925030, guid: a26aed1022b8cf448a0c8166faf68c50, type: 3}
   m_PrefabInstance: {fileID: 326262092}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &330585047
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 330585048}
-  m_Layer: 0
-  m_Name: Level 01
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &330585048
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330585047}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -45.06, y: 20, z: 2.80438}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1298408904}
-  - {fileID: 1973640896}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &349752204
 GameObject:
   m_ObjectHideFlags: 0
@@ -9287,6 +9193,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1298408904}
+  - {fileID: 1973640896}
   - {fileID: 326262093}
   - {fileID: 1516140251}
   m_Father: {fileID: 0}
@@ -25999,11 +25907,11 @@ Transform:
   m_GameObject: {fileID: 1298408898}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 28.57, y: 2.4500008, z: 1.65}
+  m_LocalPosition: {x: 6.6081886, y: 1.8382206, z: -13.704359}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 330585048}
+  m_Father: {fileID: 536157840}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!43 &1307838675
 Mesh:
@@ -45503,11 +45411,11 @@ Transform:
   m_GameObject: {fileID: 1973640895}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.919, y: 0.25, z: 9.16}
+  m_LocalPosition: {x: 4.9571896, y: -0.36178017, z: -6.194359}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 330585048}
+  m_Father: {fileID: 536157840}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1973640897
 MeshCollider:
@@ -49551,12 +49459,10 @@ SceneRoots:
   - {fileID: 1308895694677536509}
   - {fileID: 3192216114595861649}
   - {fileID: 857719465}
-  - {fileID: 51898684}
   - {fileID: 77260966}
   - {fileID: 1773105864}
   - {fileID: 3904873926296393097}
   - {fileID: 728043210}
-  - {fileID: 330585048}
   - {fileID: 1316966975}
   - {fileID: 1760863777}
   - {fileID: 1672235454}
