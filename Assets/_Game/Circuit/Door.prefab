@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8931239949892366856}
   - component: {fileID: 5884379582399460655}
   - component: {fileID: 5114042680790801564}
+  - component: {fileID: 7390610209779209289}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -80,10 +81,10 @@ MonoBehaviour:
   CircuitCompleted:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5884379582399460655}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: SetTrigger
-        m_Mode: 5
+      - m_Target: {fileID: 7390610209779209289}
+        m_TargetAssemblyTypeName: Universal.Animation.AnimatorParamSetter, Assembly-CSharp
+        m_MethodName: SetBool
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -98,6 +99,20 @@ MonoBehaviour:
   ForcedActive:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7390610209779209289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414258975929768979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0d3b1974c279a4babbe8b1e692e4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Universal.Animation.AnimatorParamSetter
+  animator: {fileID: 5884379582399460655}
+  paramName: IsOpen
 --- !u!1 &1705940853187098045
 GameObject:
   m_ObjectHideFlags: 0
