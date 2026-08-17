@@ -10,8 +10,7 @@ namespace UnityBaJam2026.Gameplay.Interaction
         [SerializeField] Collider collider;
         [SerializeField] MeshRenderer _renderer;
         [SerializeField] ParticleSystem particleSystem;
-        [SerializeField] AudioSource audioSource;
-        [SerializeField] AudioClip breakSound;
+        [SerializeField] Universal.Audio.AudioPlayer audioPlayer;
         
         public override void Set(params object[] _params)
         {
@@ -29,11 +28,7 @@ namespace UnityBaJam2026.Gameplay.Interaction
             if(particleSystem)
                 particleSystem.Play();
 
-            if (audioSource)
-            {
-                audioSource.clip = breakSound;
-                audioSource.Play();
-            }
+            audioPlayer?.TryPlay();
         }
     }
 }

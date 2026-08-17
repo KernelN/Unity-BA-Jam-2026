@@ -56,7 +56,7 @@ namespace UnityBaJam2026.Gameplay.Interaction
             if(lastInteractable && playingInteractionAnim) return;
             
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (!Physics.Raycast(ray, out RaycastHit hit, reach, rayLayers))
+            if (!Physics.Raycast(ray, out RaycastHit hit, reach, rayLayers, QueryTriggerInteraction.Ignore))
             {
                 interactorUI.gameObject.SetActive(false);
                 return;
@@ -151,10 +151,12 @@ namespace UnityBaJam2026.Gameplay.Interaction
             currentAnimator.SetBool(IsInteracting, true);
             grabber.Grab(objRigidbody);
             grabbedInteractor = interactor;
+            lastInteractable = null;
         }
         public void Drop()
         {
             currentAnimator.SetBool(IsInteracting, false);
+            lastInteractable = null;
             grabbedInteractor = null;
             grabber.DropObject();
         }

@@ -9,6 +9,7 @@ namespace UnityBaJam2026.Gameplay.Parts
         [SerializeField] float reach;
         [SerializeField] LayerMask rayLayers;
         [SerializeField] Image partPickerUI;
+        [SerializeField] Universal.Audio.AudioPlayer swapAudio;
         
         [Header("Eye")]
         [SerializeField] Vision.VisionModifier visionModifier;
@@ -97,6 +98,8 @@ namespace UnityBaJam2026.Gameplay.Parts
                         legUI.sprite = legSettings.PartUI;
                         break;
                 }
+                
+                swapAudio?.Play();
             }
         }
     }
