@@ -114,7 +114,7 @@ Transform:
   m_GameObject: {fileID: 5040238038617865759}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.55, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -198,7 +198,7 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &6869483016328745041
+--- !u!1 &6028898563417894501
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -206,11 +206,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7550243361547639651}
-  - component: {fileID: 7574879325683527158}
-  - component: {fileID: 2995550346794439737}
-  - component: {fileID: 4869495296544522072}
-  - component: {fileID: 8092699202075187255}
+  - component: {fileID: 1437147564056201607}
+  - component: {fileID: 6473900265523783012}
+  - component: {fileID: 6343032834708389687}
+  - component: {fileID: 8759559716544568949}
+  - component: {fileID: 165192726797054353}
+  - component: {fileID: 8531398073133381314}
   m_Layer: 0
   m_Name: Water Coll
   m_TagString: Untagged
@@ -218,13 +219,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7550243361547639651
+--- !u!4 &1437147564056201607
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6869483016328745041}
+  m_GameObject: {fileID: 6028898563417894501}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -233,13 +234,13 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6565726172697959261}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &7574879325683527158
+--- !u!65 &6473900265523783012
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6869483016328745041}
+  m_GameObject: {fileID: 6028898563417894501}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -254,13 +255,13 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2995550346794439737
+--- !u!114 &6343032834708389687
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6869483016328745041}
+  m_GameObject: {fileID: 6028898563417894501}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e6e6004dcc9842c7a9691b30353d6d0, type: 3}
@@ -271,21 +272,21 @@ MonoBehaviour:
   gravityInWater: -3
   buoyancy: 0.5
   drawGizmos: 1
---- !u!33 &4869495296544522072
+--- !u!33 &8759559716544568949
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6869483016328745041}
+  m_GameObject: {fileID: 6028898563417894501}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &8092699202075187255
+--- !u!23 &165192726797054353
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6869483016328745041}
+  m_GameObject: {fileID: 6028898563417894501}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -328,6 +329,36 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8531398073133381314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6028898563417894501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d75e2139d89588418b6df0b06c1e249, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Props.FloorButton
+  Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  ActivatedInverted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5040238038617865759}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8953007661292382100
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,7 +389,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7550243361547639651}
+  - {fileID: 1437147564056201607}
   - {fileID: 7971193358691790898}
   - {fileID: 592960427641506236}
   m_Father: {fileID: 0}

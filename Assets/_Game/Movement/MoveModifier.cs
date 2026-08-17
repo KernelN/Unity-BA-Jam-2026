@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 using VSController;
 
 namespace UnityBaJam2026.Gameplay.Movement
@@ -7,6 +8,8 @@ namespace UnityBaJam2026.Gameplay.Movement
     public class MoveModifier : MonoBehaviour
     {
         [SerializeField] MoveModifierSettings startingSettings;
+        
+        [Space]
         
         [SerializeField] CharacterController characterController;
         [SerializeField] FPSController fpsController;
