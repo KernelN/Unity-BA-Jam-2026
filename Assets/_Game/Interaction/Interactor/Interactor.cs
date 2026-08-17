@@ -88,7 +88,7 @@ namespace UnityBaJam2026.Gameplay.Interaction
             }
 
             //If detected surface, but no interactable, input only drops objects
-            if (!hit.transform.TryGetComponent(out Interactable interactable))
+            if (!hit.transform.TryGetComponent(out Interactable interactable) || !interactable.enabled)
             {
                 if (Input.GetMouseButtonDown(0)) Drop();
                 interactorUI.gameObject.SetActive(false);
