@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Vision.VisionModifierSettings
   renderingLayers:
     serializedVersion: 2
-    m_Bits: 247
+    m_Bits: 767
   surfaceVision: {fileID: 11400000, guid: 72a458a44e7539843a43b3572569529c, type: 2}
   waterVision: {fileID: 11400000, guid: 29f7d0db6a2546940a1d23858caedb64, type: 2}
   bloodVision: {fileID: 11400000, guid: db50d8add6ff14149ab1aa2855d20fd7, type: 2}

@@ -10,13 +10,13 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - Bars
   - Secret-Visible
   - Secret-Invisible
-  - 
+  - Pickable
   - 
   - 
   - 

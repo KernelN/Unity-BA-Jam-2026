@@ -16,5 +16,5 @@ MonoBehaviour:
   reach: 0
   rayLayers:
     serializedVersion: 2
-    m_Bits: 449
+    m_Bits: 961
   interactUI: {fileID: 0}
