@@ -5,6 +5,7 @@ namespace UnityBaJam2026.Gameplay.Interaction
     public class Grabber : MonoBehaviour
     {
         [SerializeField] Transform holdPoint;
+        Vector3 originalHoldPos;
         [SerializeField] float moveToHoldPointSpeed = 6;
         [SerializeField] float minDistToMove = 0.1f;
         [SerializeField] float slowDownDist = 0.6f;
@@ -13,7 +14,11 @@ namespace UnityBaJam2026.Gameplay.Interaction
         LayerMask oldLayerMask;
         
         public bool IsGrabbing => pickedObject;
-        
+
+        void Start()
+        {
+            originalHoldPos = holdPoint.localPosition;
+        }
         void FixedUpdate()
         {
             MovePickedObjectToHoldPoint();
@@ -54,11 +59,14 @@ namespace UnityBaJam2026.Gameplay.Interaction
             pickedRigidbody.useGravity = false;
             pickedRigidbody.freezeRotation = true;
             
-            oldLayerMask = gameObject.layer;
+            oldLayerMask = picked.gameObject.layer;
             pickedRigidbody.gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
             
             pickedObject = picked.transform;
-            pickedObject.parent = holdPoint;
+            
+            //Make sure to keep dist with picked obj
+            holdPoint.position = pickedRigidbody.position;
+            //pickedObject.parent = holdPoint;
         }
         public void DropObject()
         {
@@ -75,9 +83,10 @@ namespace UnityBaJam2026.Gameplay.Interaction
         public void ClearObject(bool destroy = false)
         {
             if(destroy) Destroy(pickedObject.gameObject);
-            
-            pickedObject = null;     
+
+            pickedObject = null;
             pickedRigidbody = null;
+            holdPoint.localPosition = originalHoldPos;
         }
     }
 }
