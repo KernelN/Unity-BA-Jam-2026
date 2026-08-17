@@ -8,7 +8,7 @@ namespace UnityBaJam2026.Gameplay.Props
         public UnityEngine.Events.UnityEvent<bool> ActivatedInverted;
         int objectsOnTop;
 
-        void OnTriggerStay(Collider other)
+        void OnTriggerEnter(Collider other)
         {
             if(objectsOnTop == 0) OnActivated(true);
             
