@@ -522,6 +522,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2995550346794439737, guid: ba7fb23f7c6120e4cbe4b474fb723428, type: 3}
+      propertyPath: buoyancy
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2995550346794439737, guid: ba7fb23f7c6120e4cbe4b474fb723428, type: 3}
+      propertyPath: gravityInWater
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6473900265523783012, guid: ba7fb23f7c6120e4cbe4b474fb723428, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6565726172697959261, guid: ba7fb23f7c6120e4cbe4b474fb723428, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.2647
@@ -1220,13 +1232,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 728043206}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.39267358, y: -0, z: -0, w: 0.9196779}
-  m_LocalPosition: {x: -8.427, y: 1.165, z: 2.526}
-  m_LocalScale: {x: 1, y: 2.6091, z: 0.08330563}
+  m_LocalRotation: {x: -0.49289978, y: -0, z: -0, w: 0.87008613}
+  m_LocalPosition: {x: -12.9, y: 2.1757, z: 0.8397}
+  m_LocalScale: {x: 3.3358, y: 6.541275, z: 0.08330563}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -46.242, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -59.063, y: 0, z: 0}
 --- !u!114 &797925147 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5876023241435944648, guid: a84912dec2dae424ea4db524b1f8b386, type: 3}
@@ -1898,7 +1910,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!65 &1846116570
 BoxCollider:
