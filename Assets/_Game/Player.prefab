@@ -241,8 +241,8 @@ MonoBehaviour:
   playerController: {fileID: 4406642479111586992}
   UIManager: {fileID: 6617434507884985228}
   health: {fileID: 0}
-  m_Sensitivity: {x: 100, y: 80}
-  acceleration: 3
+  m_Sensitivity: {x: 150, y: 100}
+  acceleration: 5
   IdleCameraShake: 1
   bobFrequency: 7
   bobAmplitude: 0.11
