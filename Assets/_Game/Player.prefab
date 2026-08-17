@@ -85,9 +85,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerController: {fileID: 4406642479111586992}
   UIManager: {fileID: 6617434507884985228}
-  health: {fileID: 2243743172077667491}
-  m_Sensitivity: {x: 150, y: 150}
-  acceleration: 5
+  health: {fileID: 0}
+  m_Sensitivity: {x: 100, y: 80}
+  acceleration: 3
   IdleCameraShake: 1
   bobFrequency: 7
   bobAmplitude: 0.11
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 553180390369545955}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3cfd6e706d9c4db39e52021f2a7fbca, type: 3}
   m_Name: 
