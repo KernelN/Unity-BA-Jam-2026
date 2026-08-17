@@ -9301,17 +9301,9 @@ MonoBehaviour:
   m_Mesh: {fileID: 0}
   m_VersionIndex: 4778
   m_IsSelectable: 1
-  m_SelectedFaces: 00000000
-  m_SelectedEdges:
-  - a: 0
-    b: 0
-  - a: 0
-    b: 0
-  - a: 0
-    b: 0
-  - a: 0
-    b: 0
-  m_SelectedVertices: 00000000000000000000000000000000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!114 &2030666043127808598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11533,17 +11525,9 @@ MonoBehaviour:
   m_Mesh: {fileID: 0}
   m_VersionIndex: 4523
   m_IsSelectable: 1
-  m_SelectedFaces: 00000000
-  m_SelectedEdges:
-  - a: 0
-    b: 0
-  - a: 0
-    b: 0
-  - a: 0
-    b: 0
-  - a: 0
-    b: 0
-  m_SelectedVertices: 00000000000000000000000000000000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!114 &5668208716399662747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15308,17 +15292,9 @@ MonoBehaviour:
   m_Mesh: {fileID: 0}
   m_VersionIndex: 13362
   m_IsSelectable: 1
-  m_SelectedFaces: 00000000
-  m_SelectedEdges:
-  - a: 0
-    b: 0
-  - a: 0
-    b: 0
-  - a: 0
-    b: 0
-  - a: 0
-    b: 0
-  m_SelectedVertices: 00000000000000000000000000000000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!114 &6048827108856950015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18312,23 +18288,9 @@ MonoBehaviour:
   m_Mesh: {fileID: 0}
   m_VersionIndex: 5191
   m_IsSelectable: 1
-  m_SelectedFaces: 00000000
-  m_SelectedEdges:
-  - a: 0
-    b: 0
-  - a: 0
-    b: 0
-  - a: 0
-    b: 0
-  - a: 0
-    b: 0
-  - a: 0
-    b: 0
-  - a: 0
-    b: 0
-  - a: 0
-    b: 0
-  m_SelectedVertices: 00000000000000000000000000000000000000000000000000000000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!114 &6466265034769636859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20476,45 +20438,9 @@ MonoBehaviour:
   m_Mesh: {fileID: 0}
   m_VersionIndex: 7752
   m_IsSelectable: 1
-  m_SelectedFaces: 060000000700000008000000090000000a0000000b000000
-  m_SelectedEdges:
-  - a: 26
-    b: 25
-  - a: 25
-    b: 24
-  - a: 24
-    b: 26
-  - a: 32
-    b: 31
-  - a: 31
-    b: 30
-  - a: 30
-    b: 32
-  - a: 38
-    b: 37
-  - a: 37
-    b: 36
-  - a: 36
-    b: 38
-  - a: 44
-    b: 43
-  - a: 43
-    b: 42
-  - a: 42
-    b: 44
-  - a: 50
-    b: 49
-  - a: 49
-    b: 48
-  - a: 48
-    b: 50
-  - a: 56
-    b: 55
-  - a: 55
-    b: 54
-  - a: 54
-    b: 56
-  m_SelectedVertices: 1a0000001900000018000000200000001f0000001e0000002600000025000000240000002c0000002b0000002a000000320000003100000030000000380000003700000036000000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!114 &8245789025128447619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35043,7 +34969,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5114042680790801564, guid: 19f40b95e5aeb864d97b7d5e2efb552c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -37183,11 +37110,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1189529697354182697, guid: 9b46261d6658bc14ea812bc8bdfff31c, type: 3}
       propertyPath: m_SelectedEdges.Array.size
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1189529697354182697, guid: 9b46261d6658bc14ea812bc8bdfff31c, type: 3}
       propertyPath: m_SelectedFaces.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1189529697354182697, guid: 9b46261d6658bc14ea812bc8bdfff31c, type: 3}
       propertyPath: m_Tangents.Array.data[0].y
@@ -40319,7 +40246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1189529697354182697, guid: 9b46261d6658bc14ea812bc8bdfff31c, type: 3}
       propertyPath: m_SelectedVertices.Array.size
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1189529697354182697, guid: 9b46261d6658bc14ea812bc8bdfff31c, type: 3}
       propertyPath: m_Textures0.Array.data[100].x
