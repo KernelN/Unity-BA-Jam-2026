@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 namespace UnityBaJam2026.Gameplay.Circuit
 {
@@ -8,6 +9,7 @@ namespace UnityBaJam2026.Gameplay.Circuit
         [SaintsField.FieldReadOnly] internal bool active;
 
         public System.Action<CircuitPart> Activated;
+        public UnityEvent<bool> OnActivated;
         
         public float percentage { get; internal set; }
         public bool IsActive => active;
@@ -23,11 +25,13 @@ namespace UnityBaJam2026.Gameplay.Circuit
             //Set the state
             active = shouldActivate;
             Activated?.Invoke(this);
+            OnActivated?.Invoke(shouldActivate);
         }
         public void ForceDeactivate()
         {
             active = false;
             Activated?.Invoke(this);
+            OnActivated?.Invoke(false);
         }
     }
 }

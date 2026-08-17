@@ -13,5 +13,16 @@ namespace Universal.Audio
             Play();
         }
         public void Play() => audioSource.PlayOneShot(clips[Random.Range(0, clips.Length)]);
+        public void SetLooping(bool play)
+        {
+            audioSource.loop = play;
+            audioSource.clip = clips[Random.Range(0, clips.Length)];
+            
+            if(play)
+                audioSource.Play();
+            else 
+                audioSource.Stop();
+        }
+        public void Stop() => audioSource.Stop();
     }
 }

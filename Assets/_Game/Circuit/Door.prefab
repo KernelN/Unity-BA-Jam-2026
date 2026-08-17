@@ -265,8 +265,7 @@ MonoBehaviour:
         collider: {fileID: 2376511668730829666}
         _renderer: {fileID: 3344411169200593873}
         particleSystem: {fileID: 0}
-        audioSource: {fileID: 0}
-        breakSound: {fileID: 0}
+        audioPlayer: {fileID: 0}
 --- !u!1 &2376653307222088041
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,7 +356,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
