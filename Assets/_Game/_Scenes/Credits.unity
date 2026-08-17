@@ -207,8 +207,9 @@ GameObject:
   - component: {fileID: 711603342}
   - component: {fileID: 711603341}
   - component: {fileID: 711603340}
+  - component: {fileID: 711603343}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -230,8 +231,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -422.0633, y: 221.38289}
-  m_SizeDelta: {x: 229.8734, y: 115.5427}
+  m_AnchoredPosition: {x: -346, y: 185}
+  m_SizeDelta: {x: 160.6338, y: 80.7404}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &711603340
 MonoBehaviour:
@@ -276,7 +277,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 711603341}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 711603343}
+        m_TargetAssemblyTypeName: Universal.UI.GameFlowButton, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &711603341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -315,6 +328,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 711603338}
   m_CullTransparentMesh: 1
+--- !u!114 &711603343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711603338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81d733d72aeeb5f47a7aa1e86e09d153, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Universal.UI.GameFlowButton
+  sceneToChange: {fileID: 102900000, guid: a393eb169bd13e846a5f07454c7559b6, type: 3}
+  sceneName: Main Menu
+  sceneLoadDelay: 1
 --- !u!1 &867382063
 GameObject:
   m_ObjectHideFlags: 0
