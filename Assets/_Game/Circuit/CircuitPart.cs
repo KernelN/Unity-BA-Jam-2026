@@ -10,7 +10,7 @@ namespace UnityBaJam2026.Gameplay.Circuit
         public System.Action<CircuitPart> Activated;
         
         public float percentage { get; internal set; }
-        public bool isActive => active;
+        public bool IsActive => active;
 
         public void TrySetActive(bool shouldActivate)
         {

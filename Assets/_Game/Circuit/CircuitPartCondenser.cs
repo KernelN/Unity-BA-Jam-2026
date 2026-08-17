@@ -15,7 +15,7 @@ namespace UnityBaJam2026.Gameplay.Circuit
             {
                 parts[i].Activated += (b) =>
                 {
-                    if (b.isActive)
+                    if (b.IsActive)
                     {
                         activeCount++;
                         if (activeCount > parts.Length) activeCount = parts.Length;
