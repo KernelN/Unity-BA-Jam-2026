@@ -23627,6 +23627,61 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!1 &3026016386401995620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7595432164212306980}
+  - component: {fileID: 4782390100052254449}
+  m_Layer: 0
+  m_Name: Moving Floor Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7595432164212306980
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3026016386401995620}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -24.361721, y: 23.307638, z: -13.02405}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 229895115308406162}
+  m_Father: {fileID: 4600697489592883833}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &4782390100052254449
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3026016386401995620}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6e5d02f2b1c4cb341a17d6b73aa0d8dc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3370940913682742824
 GameObject:
   m_ObjectHideFlags: 0
@@ -48637,7 +48692,7 @@ Transform:
   - {fileID: 14132486477797902}
   - {fileID: 3145997299957696060}
   - {fileID: 8027840659453876628}
-  - {fileID: 229895115308406162}
+  - {fileID: 7595432164212306980}
   - {fileID: 7120099717606955929}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -49013,7 +49068,6 @@ GameObject:
   - component: {fileID: 5674326903682899969}
   - component: {fileID: 7005651714133692171}
   - component: {fileID: 7283009036115255466}
-  - component: {fileID: 3788769733573790641}
   m_Layer: 0
   m_Name: Moving Floor
   m_TagString: Untagged
@@ -49030,11 +49084,11 @@ Transform:
   m_GameObject: {fileID: 5832932825517910936}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -24.361721, y: 23.307638, z: -13.02405}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4600697489592883833}
+  m_Father: {fileID: 7595432164212306980}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7986469689812614327
 MonoBehaviour:
@@ -49398,30 +49452,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec0d3b1974c279a4babbe8b1e692e4a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Universal.Animation.AnimatorParamSetter
-  animator: {fileID: 3788769733573790641}
+  animator: {fileID: 4782390100052254449}
   paramName: IsPressed
---- !u!95 &3788769733573790641
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5832932825517910936}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6e5d02f2b1c4cb341a17d6b73aa0d8dc, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5893083920616096433
 GameObject:
   m_ObjectHideFlags: 0
