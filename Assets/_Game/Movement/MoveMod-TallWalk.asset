@@ -16,4 +16,4 @@ MonoBehaviour:
   stepOffsetMod: 0.6
   extraWalkableLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
