@@ -157,6 +157,7 @@ GameObject:
   - component: {fileID: 4310648726201694837}
   - component: {fileID: 4386316027093757954}
   - component: {fileID: 8393179972948701727}
+  - component: {fileID: 6309330529622840067}
   m_Layer: 0
   m_Name: Ladder_trig_1
   m_TagString: Untagged
@@ -214,3 +215,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   climbSpeed: 3
   drawGizmos: 1
+--- !u!33 &6309330529622840067
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7116897737566399100}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
