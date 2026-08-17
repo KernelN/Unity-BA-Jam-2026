@@ -2301,6 +2301,10 @@ PrefabInstance:
       propertyPath: speedText
       value: 
       objectReference: {fileID: 510148760}
+    - target: {fileID: 4577206307286430192, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5889402694566119371, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
       propertyPath: armUI
       value: 
