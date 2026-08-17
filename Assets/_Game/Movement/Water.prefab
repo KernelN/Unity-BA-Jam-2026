@@ -268,7 +268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerSize: {x: 1, y: 1, z: 1}
   movementDampFactor: 1
-  gravityInWater: -1
+  gravityInWater: -3
   buoyancy: 0.5
   drawGizmos: 1
 --- !u!33 &4869495296544522072
