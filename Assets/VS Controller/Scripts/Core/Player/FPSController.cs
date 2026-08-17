@@ -109,7 +109,10 @@ namespace VSController
         {
             controller = GetComponent<CharacterController>();
 
-            standingHeight = controller.height;
+            if(standingHeight > 0)
+                controller.height = standingHeight;
+            else
+                standingHeight = controller.height;
             playerCamera = lookController.playerCamera;
             initialCameraHeight = playerCamera.localPosition.y;
 

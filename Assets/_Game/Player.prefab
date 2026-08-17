@@ -40,7 +40,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1712178029855287569}
+  - {fileID: 1610094798071805827}
   - {fileID: 5832181056971745045}
   - {fileID: 4008092255014238515}
   - {fileID: 6326219133046287016}
@@ -1156,7 +1156,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1712178029855287569}
-  - component: {fileID: 738428288507653879}
   m_Layer: 0
   m_Name: CameraHolder
   m_TagString: Untagged
@@ -1178,21 +1177,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4887052662905614934}
-  m_Father: {fileID: 3372493242826271404}
+  m_Father: {fileID: 1610094798071805827}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &738428288507653879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8382593542437443561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8feb74370d1eb9644b1bba362caa2481, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.CameraHeightKeeper
-  characterController: {fileID: 6960970744175559737}
 --- !u!1 &8603354895796471755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,6 +1263,52 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &8735350913559603934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1610094798071805827}
+  - component: {fileID: 418370427571167122}
+  m_Layer: 0
+  m_Name: CameraHeightKeeper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1610094798071805827
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8735350913559603934}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1712178029855287569}
+  m_Father: {fileID: 3372493242826271404}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &418370427571167122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8735350913559603934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8feb74370d1eb9644b1bba362caa2481, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.CameraHeightKeeper
+  characterController: {fileID: 6960970744175559737}
 --- !u!1001 &3515689293105844577
 PrefabInstance:
   m_ObjectHideFlags: 0

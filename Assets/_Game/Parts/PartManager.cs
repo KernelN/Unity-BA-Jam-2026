@@ -27,7 +27,7 @@ namespace UnityBaJam2026.Gameplay.Parts
         [SerializeField] PartSettings legSettings;
         [SerializeField] Image legUI;
        
-        void Awake()
+        void Start()
         {
             if (eyeSettings)
             {
