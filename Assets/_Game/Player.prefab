@@ -117,8 +117,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canMove: 1
   canLook: 1
-  canSprint: 1
-  canJump: 1
+  canSprint: 0
+  canJump: 0
   canCrouch: 0
   freeFly: 0
   canGoUpInWater: 0
