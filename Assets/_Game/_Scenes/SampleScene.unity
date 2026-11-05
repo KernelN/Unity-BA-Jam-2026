@@ -567,6 +567,17 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!114 &39769301 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4406642479111586992, guid: dd5b1b36379c198439a9ec01edf06b8f, type: 3}
+  m_PrefabInstance: {fileID: 3356563746704924597}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5eb52c23c9a543ecb0f5599f7149314, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &43359753
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28054,6 +28065,66 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!1 &572564706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 572564708}
+  - component: {fileID: 572564707}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &572564707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572564706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e44d3edc1c6d74aaea72cf930690e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.GameManager
+  player: {fileID: 39769301}
+  onGameOver:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 758903540}
+        m_TargetAssemblyTypeName: Universal.UI.FadeController, Assembly-CSharp
+        m_MethodName: FadeIn
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!4 &572564708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572564706}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -50.64816, y: 29.89717, z: -14.01247}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &581533650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33675,6 +33746,17 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
+--- !u!114 &758903540 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 937004117260454495, guid: 5f791d2bceb16b0458b611e83215d785, type: 3}
+  m_PrefabInstance: {fileID: 3192216114595861649}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bfb479a5ee9e054cad9371a79c70c73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Universal.UI.FadeController
 --- !u!43 &759427586
 Mesh:
   m_ObjectHideFlags: 0
@@ -72421,67 +72503,6 @@ Mesh:
       - serializedVersion: 1
         m_IndexStart: 0
         m_IndexCount: 0
---- !u!1001 &1993711019
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4371194661079681812, guid: a26aed1022b8cf448a0c8166faf68c50, type: 3}
-      propertyPath: m_Name
-      value: PickablePart (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6053365036598290150, guid: a26aed1022b8cf448a0c8166faf68c50, type: 3}
-      propertyPath: partSettings
-      value: 
-      objectReference: {fileID: 11400000, guid: 83324a82c0adbd049b7fce89c8822a72, type: 2}
-    - target: {fileID: 8806073604466925030, guid: a26aed1022b8cf448a0c8166faf68c50, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -11.482064
-      objectReference: {fileID: 0}
-    - target: {fileID: 8806073604466925030, guid: a26aed1022b8cf448a0c8166faf68c50, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 29.899
-      objectReference: {fileID: 0}
-    - target: {fileID: 8806073604466925030, guid: a26aed1022b8cf448a0c8166faf68c50, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.0630615
-      objectReference: {fileID: 0}
-    - target: {fileID: 8806073604466925030, guid: a26aed1022b8cf448a0c8166faf68c50, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8806073604466925030, guid: a26aed1022b8cf448a0c8166faf68c50, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8806073604466925030, guid: a26aed1022b8cf448a0c8166faf68c50, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8806073604466925030, guid: a26aed1022b8cf448a0c8166faf68c50, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8806073604466925030, guid: a26aed1022b8cf448a0c8166faf68c50, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8806073604466925030, guid: a26aed1022b8cf448a0c8166faf68c50, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8806073604466925030, guid: a26aed1022b8cf448a0c8166faf68c50, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a26aed1022b8cf448a0c8166faf68c50, type: 3}
 --- !u!43 &2010902244
 Mesh:
   m_ObjectHideFlags: 0
@@ -104101,11 +104122,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6244236102526622048, guid: a84912dec2dae424ea4db524b1f8b386, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -331.51025
+      value: -331.51022
       objectReference: {fileID: 0}
     - target: {fileID: 6244236102526622048, guid: a84912dec2dae424ea4db524b1f8b386, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -143.04996
+      value: -143.04997
       objectReference: {fileID: 0}
     - target: {fileID: 6264238514426259454, guid: a84912dec2dae424ea4db524b1f8b386, type: 3}
       propertyPath: m_Name
@@ -104113,11 +104134,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6666051431038618638, guid: a84912dec2dae424ea4db524b1f8b386, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -331.56998
+      value: -331.56992
       objectReference: {fileID: 0}
     - target: {fileID: 8414179983025856078, guid: a84912dec2dae424ea4db524b1f8b386, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 84.034
+      value: 84.033966
       objectReference: {fileID: 0}
     - target: {fileID: 8857209957359806597, guid: a84912dec2dae424ea4db524b1f8b386, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -104223,6 +104244,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6652805722582131690, guid: 5f791d2bceb16b0458b611e83215d785, type: 3}
+      propertyPath: completedFade.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6652805722582131690, guid: 5f791d2bceb16b0458b611e83215d785, type: 3}
+      propertyPath: completedFade.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6652805722582131690, guid: 5f791d2bceb16b0458b611e83215d785, type: 3}
+      propertyPath: completedFade.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 572564707}
+    - target: {fileID: 6652805722582131690, guid: 5f791d2bceb16b0458b611e83215d785, type: 3}
+      propertyPath: completedFade.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6652805722582131690, guid: 5f791d2bceb16b0458b611e83215d785, type: 3}
+      propertyPath: completedFade.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnExitMenuReady
+      objectReference: {fileID: 0}
+    - target: {fileID: 6652805722582131690, guid: 5f791d2bceb16b0458b611e83215d785, type: 3}
+      propertyPath: completedFade.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityBaJam2026.Gameplay.GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6652805722582131690, guid: 5f791d2bceb16b0458b611e83215d785, type: 3}
+      propertyPath: completedFade.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7038899139864712897, guid: 5f791d2bceb16b0458b611e83215d785, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -105777,6 +105826,22 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1284471888}
+    - target: {fileID: 3840708476003227650, guid: f583e7842c7908948bd298eabcbb2033, type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3840708476003227650, guid: f583e7842c7908948bd298eabcbb2033, type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 572564707}
+    - target: {fileID: 3840708476003227650, guid: f583e7842c7908948bd298eabcbb2033, type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnGameOver
+      objectReference: {fileID: 0}
+    - target: {fileID: 3840708476003227650, guid: f583e7842c7908948bd298eabcbb2033, type: 3}
+      propertyPath: Activated.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityBaJam2026.Gameplay.GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3876134843424551385, guid: f583e7842c7908948bd298eabcbb2033, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -106606,6 +106671,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 572564708}
   - {fileID: 1649464730}
   - {fileID: 3356563746704924597}
   - {fileID: 1308895694677536509}
@@ -106629,7 +106695,6 @@ SceneRoots:
   - {fileID: 1400757013}
   - {fileID: 1936741142}
   - {fileID: 1787951690}
-  - {fileID: 1993711019}
   - {fileID: 861129324}
   - {fileID: 1961923141}
   - {fileID: 812961306}

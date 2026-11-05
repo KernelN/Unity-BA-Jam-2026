@@ -303,7 +303,7 @@ GameObject:
   - component: {fileID: 5940256803705980965}
   - component: {fileID: 937004117260454495}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Game Over Fade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -427,7 +427,7 @@ GameObject:
   - component: {fileID: 5043620650625790725}
   - component: {fileID: 4454211031787669039}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Back To Menu Fade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
