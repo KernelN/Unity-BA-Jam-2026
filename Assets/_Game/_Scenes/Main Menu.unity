@@ -679,7 +679,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1226082289}
+      - m_Target: {fileID: 1532424666}
         m_TargetAssemblyTypeName: Universal.UI.GameFlowButton, Assembly-CSharp
         m_MethodName: ChangeScene
         m_Mode: 1
