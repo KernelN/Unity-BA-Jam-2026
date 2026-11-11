@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Interactor-Club
   m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Interaction.InteractorSetting
   tag: 1
-  reach: 2
+  reach: 3
   rayLayers:
     serializedVersion: 2
     m_Bits: 961

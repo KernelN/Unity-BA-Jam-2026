@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Interactor-Stick
   m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Interaction.InteractorSetting
   tag: 0
-  reach: 6
+  reach: 7
   rayLayers:
     serializedVersion: 2
     m_Bits: 897

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Interactor-Claw
   m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Interaction.InteractorSetting
   tag: 2
-  reach: 2
+  reach: 4
   rayLayers:
     serializedVersion: 2
     m_Bits: 961

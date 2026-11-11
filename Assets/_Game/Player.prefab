@@ -495,7 +495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1e3ab4d59274ef4cbb4f0bc414c6643, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnityBaJam2026.Gameplay.Parts.PartManager
-  reach: 2
+  reach: 3
   rayLayers:
     serializedVersion: 2
     m_Bits: 513
@@ -716,6 +716,7 @@ MonoBehaviour:
   interactorUIColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   interactorUIActiveColor: {r: 1, g: 1, b: 1, a: 1}
   grabber: {fileID: 3997264655990714521}
+  drawGizmos: 0
   references:
     version: 2
     RefIds:

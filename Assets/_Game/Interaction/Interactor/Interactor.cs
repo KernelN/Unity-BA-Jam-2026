@@ -28,6 +28,8 @@ namespace UnityBaJam2026.Gameplay.Interaction
         [Header("Pick Up & Carry")]
         [SerializeField] Grabber grabber;
         InteractorSetting grabbedInteractor;
+
+        [Header("Debug")] [SerializeField] bool drawGizmos;
        
         void Awake()
         {
@@ -42,6 +44,15 @@ namespace UnityBaJam2026.Gameplay.Interaction
                 CheckGrabbedInteractions();
             else CheckInteractions();
         }
+
+        void OnDrawGizmos()
+        {
+            if(!drawGizmos) return;
+            
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Gizmos.DrawRay(ray.origin, ray.direction * reach);
+        }
+
         void CheckInteractions()
         {
             if(playingInteractionAnim) return;
