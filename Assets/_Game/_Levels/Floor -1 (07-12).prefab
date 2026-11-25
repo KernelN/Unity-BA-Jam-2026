@@ -45718,6 +45718,22 @@ PrefabInstance:
       propertyPath: 'circuitParts.Array.data[0]'
       value: 
       objectReference: {fileID: 6357501688171031099}
+    - target: {fileID: 4682297693419095741, guid: 681191ffab1791744ba5768814696017, type: 3}
+      propertyPath: CircuitCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682297693419095741, guid: 681191ffab1791744ba5768814696017, type: 3}
+      propertyPath: CircuitCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2675164803922971514}
+    - target: {fileID: 4682297693419095741, guid: 681191ffab1791744ba5768814696017, type: 3}
+      propertyPath: CircuitCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetBool
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682297693419095741, guid: 681191ffab1791744ba5768814696017, type: 3}
+      propertyPath: CircuitCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Universal.Animation.AnimatorParamSetter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 6909906660706442423, guid: 681191ffab1791744ba5768814696017, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.7991495
@@ -45765,8 +45781,35 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7813433453894849611, guid: 681191ffab1791744ba5768814696017, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2675164803922971514}
   m_SourcePrefab: {fileID: 100100000, guid: 681191ffab1791744ba5768814696017, type: 3}
+--- !u!95 &882266678091678616 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9030940424000071578, guid: 681191ffab1791744ba5768814696017, type: 3}
+  m_PrefabInstance: {fileID: 8172389180952601602}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2091021514129453129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7813433453894849611, guid: 681191ffab1791744ba5768814696017, type: 3}
+  m_PrefabInstance: {fileID: 8172389180952601602}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2675164803922971514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091021514129453129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0d3b1974c279a4babbe8b1e692e4a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Universal.Animation.AnimatorParamSetter
+  animator: {fileID: 882266678091678616}
+  paramName: IsOpen
 --- !u!4 &3354834097778178229 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6909906660706442423, guid: 681191ffab1791744ba5768814696017, type: 3}
