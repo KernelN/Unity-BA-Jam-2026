@@ -816,7 +816,10 @@ namespace VSController
 
                 if (renderer.sharedMaterial != null)
                 {
-                    currentSurfaceTexture = renderer.sharedMaterial.mainTexture;
+                    if(renderer.sharedMaterial.HasTexture("_MainTex"))
+                        currentSurfaceTexture = renderer.sharedMaterial.mainTexture;
+                    else if (renderer.sharedMaterial.HasTexture("_BaseMap"))
+                        currentSurfaceTexture = renderer.sharedMaterial.GetTexture("_BaseMap");
                 }
                 else
                 {
